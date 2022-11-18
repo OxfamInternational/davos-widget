@@ -1,8 +1,6 @@
 # Historical documentation
 
-This is to house documentation that may not be relevant when in support, but is probably handy to be aware of just in case it gets referenced.
+This is to house documentation that may not be relevant when supporting the
+site, but is probably handy to be aware of just in case it gets referenced.
 
-- Support notebook: 
-- Project documentation: 
-- Figma: 
-- Taiga: 
+- Ticket: https://github.com/OxfamInternational/www_oxfam_org/issues/1624

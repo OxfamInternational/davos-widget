@@ -29,15 +29,15 @@ class DavosWidget {
         const targetItems = document.querySelectorAll('.davoswidget');
         targetItems.forEach(targetItem => {
             var widgetID = targetItem.dataset.widget;
-            this.setupIndividual(widgetID, questionsData[widgetID], targetItem);
+            // Check widget exists to limit errors in the JSON.
+            if (questionsData.hasOwnProperty(widgetID)) {
+                this.setupIndividual(widgetID, questionsData[widgetID], targetItem);
+            }
         });        
 
     }
 
     questionBuilder(questionData, key) {
-        // <p class="davoswidget-question"></p>
-        // <ul class="davoswidget-options"></ul>
-        // <p class="davoswidget-response"></p>
 
         const questionWrapper = document.createElement('div');
         questionWrapper.setAttribute('class','davoswidget-question');
@@ -70,7 +70,6 @@ class DavosWidget {
 
         return questionWrapper;
         
-        
     }
 
     // Setup an individual widget.
@@ -83,37 +82,13 @@ class DavosWidget {
         wrapper.innerHTML = this.htmlWrapperStr;
         targetItem.parentNode.replaceChild(wrapper, targetItem);
 
-        console.log(questionsData);
-
         let i = 0;
         questionsData.forEach(questionData => {
             const questionWrapper = this.questionBuilder(questionData,i);
-
             const targetDiv = document.querySelector('.' + selector + ' .davoswidget-questions');
             targetDiv.appendChild(questionWrapper);
             i = i+1;
         });
-
-        // Insert the question
-        // document.querySelector('.' + selector + ' .davoswidget-question').innerText = questionsData.question;
-
-        // Insert the options
-        // var ul=document.createElement('ul');
-        // ul.setAttribute('class','davoswidget-options');
-        
-        // let optionElements = '';
-        // let optionsArray = Object.keys(questionsData['options']).map((k) => questionsData['options'][k]);
-        // optionsArray.map(option => {
-        //     const li = document.createElement('li');
-        //     const a = document.createElement('a');
-        //     a.innerHTML = option;
-        //     a.setAttribute('href','#');
-        //     a.setAttribute('data-davoswidget-option',option);
-        //     li.appendChild(a);
-        //     ul.appendChild(li);
-        // });
-        // const targetUl = document.querySelector('.' + selector + ' .davoswidget-options');
-        // targetUl.parentNode.replaceChild(ul, targetUl);
 
         // Add event listeners to the new links
         const optionElements = document.querySelectorAll('.' + selector + ' .davoswidget-options > li > a')

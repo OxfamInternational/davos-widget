@@ -1,4 +1,4 @@
-# Objectives of the site
+# Objectives of the widget
 
 Below is a list of the core objectives of the site (in order), which all decisions should be based off of.
 
