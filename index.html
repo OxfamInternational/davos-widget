@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Davos Widget Prototype</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="davos-widget.css">
+        
+    </head>
+    <body>
+
+        <h1>This is a page</h1>
+        <p>Some page copy.</p>
+
+        <!-- davos-widget-goes-here -->
+        
+        <span class="davoswidget" data-widget="food"></span>
+        <span class="davoswidget" data-widget="water"></span>
+        <!-- The js must go at bottom of the page so it can access the DOM -->
+        <script src="davos-widget.js"></script>
+        <script>
+          const davosWidget = new DavosWidget('davis-widget.json');
+          davosWidget.setup();
+        </script>
+
+
+    </body>
+</html>

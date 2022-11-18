@@ -1,0 +1,21 @@
+{
+    "food": [
+        {
+            "question": "Which number comes after 2?",
+            "options": ["one", "two", "three", "four"],
+            "answer": "three"
+        }
+    ],
+    "water": [
+        {
+            "question": "Which is the wetter?",
+            "options": ["mud", "water", "brick", "the sun"],
+            "answer": "water"
+        },
+        {
+            "question": "Which is the hotter?",
+            "options": ["mud", "water", "brick", "the sun"],
+            "answer": "the sun"
+        }
+    ]
+}
