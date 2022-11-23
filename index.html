@@ -11,20 +11,35 @@
 
         <h1>This is a page</h1>
         <p>Some page copy.</p>
+
+        <h2>Options</h2>
         
         <!-- davos-widget-food -->
-        <span class="davoswidget" data-widget="food"></span>
-        
-        <!-- davos-widget-water -->
-        <span class="davoswidget" data-widget="water"></span>
+        <span class="davoswidget" data-widget="billionaires"></span>
 
         <!-- davos-widget-water -->
-        <span class="davoswidget" data-widget="housing"></span>
+        <span class="davoswidget" data-widget="wages"></span>
+
+        <h2>Text</h2>
+
+        <!-- davos-widget-water -->
+        <span class="davoswidget" data-widget="energy"></span>
+
+        <!-- davos-widget-water -->
+        <span class="davoswidget" data-widget="food"></span>
+
+        <h2>Multiple Choice</h2>
+
+        <!-- davos-widget-water -->
+        <span class="davoswidget" data-widget="qol"></span>
+
+        <!-- davos-widget-water -->
+        <span class="davoswidget" data-widget="tax"></span>
 
         <!-- The js must go at bottom of the page so it can access the DOM -->
         <script src="davos-widget.js"></script>
         <script>
-          const davosWidget = new DavosWidget('davis-widget.json');
+          const davosWidget = new DavosWidget('davos-widget.json');
           davosWidget.setup();
         </script>
 

@@ -1,21 +1,60 @@
 {
-    "food": [
-        {
-            "question": "Which number comes after 2?",
-            "options": ["one", "two", "three", "four"],
-            "answer": "three"
-        }
-    ],
-    "water": [
-        {
-            "question": "Which is the wetter?",
-            "options": ["mud", "water", "brick", "the sun"],
-            "answer": "water"
-        },
-        {
-            "question": "Which is the hotter?",
-            "options": ["mud", "water", "brick", "the sun"],
-            "answer": "the sun"
-        }
-    ]
+    "questions": {
+        "billionaires": [
+            {
+                "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you must use logic in that sense. (European)",
+                "type": "options",
+                "options": ["Tom Cruise", "Penelope Cruz", "Rosalia", "Adam Sandler"],
+                "answer": "Tom Cruise",
+                "cta": {
+                    "url": "http://donate.oxfam.org",
+                    "linktext": "Donate"
+                }
+            },
+            {
+                "question": "I mean the truth is, I've never had it so good in terms of taxes. I am paying the lowest tax rate that I've ever paid in my life.",
+                "type": "options",
+                "options": ["Elon Musk", "Warren Buffet", "Mark Zuckerberg", "James Cargill"],
+                "answer": "Elon Musk"
+            }
+        ],
+        "food": [
+            {
+                "question": "In recent months, how much more are you spending on food?",
+                "type": "text",
+                "response": "The wealth of food billionaires increased by $x bn in the last year whilst the pandemic and runaway food prices have led to poverty and a cost-of-living crisis for the many, we must #TaxTheRich"
+            }
+        ],
+        "energy": [
+            {
+                "question": "In recent months, how much more are you spending on energy*(electricity, heat, fuel)? ",
+                "type": "text",
+                "response": "Oxfam’s report has found a growing body of evidence that points to corporate profits and margins as a significant driver of greed-inflation. The 200 largest global energy companies profits are X% higher and their margins are X% higher. #FightInequality"
+            }
+        ],
+        "qol": [
+            {
+                "question": "Due to the rising cost of living, what have you had to sacrifice to survive?",
+                "type": "multiplechoice",
+                "options": ["A meal", "Care work", "Medical care", "Hot showers / Education", "Entertainment", "Other"],
+                "response": "Billionaire have sacrificed nothing, their expenditure in luxury goods such as yachts, champagne & thoroughbreds continues unabated despite the 7% inflation in ultra-luxe goods #TaxTheRich"
+            }
+        ],
+        "wages": [
+            {
+                "question": "Has your wage decreased since the pandemic began?",
+                "type": "options",
+                "options": ["Yes", "No"],
+                "response": "If Yes: Billionaires continue to profit. If No: Well, with the reality of inflation, X% of workers have a real time pay cut because of inflation. Analysis by Oxfam of wages of xx countries finds that in 2022, one in three of the world’s workers will see their wages outpaced by inflation … (solution needed )*"
+            }
+        ],
+        "tax": [
+            {
+                "question": "In your every day life, when do you pay taxes?",
+                "type": "multiplechoice",
+                "options": ["Salary", "Paying Rent", "Grocery shopping", "Healthcare", "Buying a car", "Utility Bill (Phone, Electricity, Water etc.)", "Getting Married/Getting Divorce", "Inheritance"],
+                "response": "How Billionaires dodge a tax e.g earning 1 dollar as an employee and making a living from dividends as majority shareholders."
+            }
+        ]
+    }
 }

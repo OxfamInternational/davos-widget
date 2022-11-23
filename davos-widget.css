@@ -1,0 +1,65 @@
+.davoswidget {
+    --ox-green: #44841a;
+    --ox-orange: #f16e22;
+    --ox-black: #545454;
+    --ox-white: #fff;
+    font-family: Roboto,arial,helvetica,sans-serif;
+    margin: 10px 0 20px;
+}
+
+.davoswidget-options,
+.davoswidget-multiplechoice {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+.davoswidget-options li,
+.davoswidget-multiplechoice li {
+    list-style: none;
+    flex: 1;
+}
+.davoswidget-options li > a,
+.davoswidget-multiplechoice li > a,
+.davoswidget-submit,
+.davoswidget-cta {
+    display: block;
+    background-color: var(--ox-green);
+    color: var(--ox-white);
+    border-radius: 20px;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--ox-green);
+    margin: 10px 0 0;
+}
+.davoswidget-options li > a.active,
+.davoswidget-options li > a:hover,
+.davoswidget-multiplechoice li > a.active,
+.davoswidget-multiplechoice li > a:hover,
+.davoswidget-submit:hover,
+.davoswidget-cta:hover {
+    background-color: var(--ox-white);
+    color: var(--ox-green);
+}
+
+.davoswidget-cta {
+    background-color: var(--ox-orange);
+}
+.davoswidget-cta:hover {
+    color: var(--ox-orange);
+}
+
+.davoswidget-question > p {
+    font-weight: bold;
+}
+.davoswidget-response {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+}
+.davoswidget textarea {
+    width: 100%;
+    min-height: 50px;
+}
