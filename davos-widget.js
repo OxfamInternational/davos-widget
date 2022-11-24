@@ -53,18 +53,22 @@ class DavosWidget {
 
     questionBuilder(questionData, key) {
 
-        const questionWrapper = document.createElement('div');
-        questionWrapper.setAttribute('class','davoswidget-question');
-        questionWrapper.setAttribute('data-davoswidget-questionkey', key);
-
-        // Setup the question element
-        const questionElement = document.createElement('p');
-        questionElement.innerHTML = questionData.question;
-        questionWrapper.appendChild(questionElement);
-
         const questionType = questionData['type'];
 
+        const questionWrapper = document.createElement('div');
+        questionWrapper.setAttribute('class','davoswidget-question davoswidget-question-type-' + questionType);
+        questionWrapper.setAttribute('data-davoswidget-questionkey', key);
+
+        
+
+        
+
         if (questionType === "options") {
+            // Setup the question element
+            const questionElement = document.createElement('p');
+            questionElement.innerHTML = questionData.question;
+            questionWrapper.appendChild(questionElement);
+
             // Setup the option elements
             var ul=document.createElement('ul');
             ul.setAttribute('class','davoswidget-options');
@@ -81,6 +85,11 @@ class DavosWidget {
             questionWrapper.appendChild(ul);
         }
         if (questionType === "multiplechoice") {
+            // Setup the question element
+            const questionElement = document.createElement('p');
+            questionElement.innerHTML = questionData.question;
+            questionWrapper.appendChild(questionElement);
+
             // Setup the option elements
             var ul=document.createElement('ul');
             ul.setAttribute('class','davoswidget-multiplechoice');
@@ -102,14 +111,26 @@ class DavosWidget {
             submit.innerHTML = "Submit response";
             questionWrapper.appendChild(submit);
         }
-        if (questionType === "text") {
+        if (questionType === "currency") {
+            var qaWrapper=document.createElement('div');
+            qaWrapper.setAttribute('class', 'flex');
+
+            // Setup the question element
+            const questionElement = document.createElement('p');
+            questionElement.innerHTML = questionData.question;
+            qaWrapper.appendChild(questionElement);
+
             // Setup the option elements
-            var textarea=document.createElement('textarea');
-            questionWrapper.appendChild(textarea);
+            var textfield=document.createElement('input');
+            textfield.setAttribute('type','text');
+            qaWrapper.appendChild(textfield);
+
+
             const submit = document.createElement('a');
             submit.setAttribute('href','#');
             submit.setAttribute('class', 'davoswidget-submit');
             submit.innerHTML = "Submit response";
+            questionWrapper.appendChild(qaWrapper);
             questionWrapper.appendChild(submit);
         }
 

@@ -63,3 +63,8 @@
     width: 100%;
     min-height: 50px;
 }
+
+.davoswidget .flex {
+    display: flex;
+    gap: 20px;
+}

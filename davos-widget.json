@@ -17,14 +17,14 @@
         "food": [
             {
                 "question": "In recent months, how much more are you spending on food?",
-                "type": "text",
+                "type": "currency",
                 "response": "The wealth of food billionaires increased by $x bn in the last year whilst the pandemic and runaway food prices have led to poverty and a cost-of-living crisis for the many, we must #TaxTheRich"
             }
         ],
         "energy": [
             {
                 "question": "In recent months, how much more are you spending on energy*(electricity, heat, fuel)? ",
-                "type": "text",
+                "type": "currency",
                 "response": "Oxfam’s report has found a growing body of evidence that points to corporate profits and margins as a significant driver of greed-inflation. The 200 largest global energy companies profits are X% higher and their margins are X% higher. #FightInequality"
             }
         ],
