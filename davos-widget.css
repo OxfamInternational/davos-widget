@@ -10,7 +10,7 @@
 .davoswidget-options,
 .davoswidget-multiplechoice {
     margin: 0;
-    padding: 0;
+    padding: 15px 20px;
     display: flex;
     gap: 12px;
     align-items: center
@@ -43,6 +43,9 @@
     background-color: var(--ox-white);
     color: var(--ox-green);
 }
+.davoswidget-submit {
+    margin: 15px 20px;
+}
 
 .davoswidget-cta {
     background-color: var(--ox-orange);
@@ -58,6 +61,7 @@
     text-align: center;
     margin-top: 20px;
     font-style: italic;
+    font-size: 1.8rem;
 }
 .davoswidget textarea {
     width: 100%;
