@@ -21,7 +21,9 @@ class DavosWidget {
             for (const objkey in res[0].questions) {
                 let questions = mergedQuestionsData.questions[objkey];
                 for (let i = 0; i < questions.length; i++) {
-                    mergedQuestionsData.questions[objkey][i].cta = res[1].questions[objkey][i]['cta'];
+                    if (res[1].questions[objkey][i]['cta']['url'] !== "") {
+                        mergedQuestionsData.questions[objkey][i].cta = res[1].questions[objkey][i]['cta'];
+                    }
                 }
             }
             this.mergedQuestionsData = mergedQuestionsData;
