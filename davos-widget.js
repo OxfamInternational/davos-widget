@@ -140,9 +140,12 @@ class DavosWidget {
         questionWrapper.appendChild(responseElement);
 
         // Setup cta element.
-        const ctaElement = document.createElement('div');
-        ctaElement.setAttribute('class','davoswidget-cta-wrapper');
-        questionWrapper.appendChild(ctaElement);
+        const ctaElementWrapper = document.createElement('div');
+        ctaElementWrapper.setAttribute('class','davoswidget-cta-wrapper');
+        const ctaElement = document.createElement('span');
+        // ctaElement.setAttribute('class','davoswidget-cta');
+        ctaElementWrapper.appendChild(ctaElement);
+        questionWrapper.appendChild(ctaElementWrapper);
 
         return questionWrapper;
         
@@ -219,8 +222,11 @@ class DavosWidget {
                 let choice = this.dataset.davoswidgetOption
                 let key = this.parentNode.parentNode.parentNode.dataset.davoswidgetQuestionkey;
                 let resultText = '';
+                if (questionsData[key].hasOwnProperty('responses')) {
+                    resultText = resultText + questionsData[key].responses[choice] + ' ';
+                }
                 if (questionsData[key].hasOwnProperty('response')) {
-                    resultText = questionsData[key].response;
+                    resultText = resultText + questionsData[key].response;
                 }
                 else if (choice === questionsData[key]['answer']) {
                     resultText = 'Correct';
@@ -244,9 +250,9 @@ class DavosWidget {
                     cta.innerHTML = questionsData[key].cta.linktext;
                     cta.setAttribute('href', questionsData[key].cta.url);
                     cta.setAttribute('class', 'davoswidget-cta');
-
                     const ctaElementWrapper = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-cta-wrapper');
-                    ctaElementWrapper.parentNode.replaceChild(cta, ctaElementWrapper);
+                    const ctaElement = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-cta-wrapper > *');
+                    ctaElementWrapper.replaceChild(cta, ctaElement);
                 }
 
                 event.preventDefault();

@@ -41,7 +41,11 @@
                 "question": "Has your wage decreased since the pandemic began?",
                 "type": "options",
                 "options": ["Yes", "No"],
-                "response": "If Yes: Billionaires continue to profit. If No: Well, with the reality of inflation, X% of workers have a real time pay cut because of inflation. Analysis by Oxfam of wages of xx countries finds that in 2022, one in three of the world’s workers will see their wages outpaced by inflation … (solution needed )*"
+                "responses": {
+                    "Yes": "Billionaires continue to profit.",
+                    "No": "Well, with the reality of inflation, X% of workers have a real time pay cut because of inflation. "
+                },
+                "response": "Analysis by Oxfam of wages of xx countries finds that in 2022, one in three of the world’s workers will see their wages outpaced by inflation … (solution needed )*"
             }
         ],
         "tax": [
