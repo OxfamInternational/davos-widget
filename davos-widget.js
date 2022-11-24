@@ -1,36 +1,49 @@
 class DavosWidget {
 
     // Setup some base variables
-    constructor(jsonPath) {
-        this.jsonPath = jsonPath;
+    constructor(ctaJsonPath, coreJsonPath) {
+        this.jsonPath = coreJsonPath;
+        this.ctaJsonPath = ctaJsonPath;
         this.htmlWrapperStr = 
         `<div class="davoswidget-questions"></div>`;
     }
 
     // Get the questionData from our local json file.
-    async getQuestionData() {
-        let response = await fetch(this.jsonPath);
+    async getQuestionData(path, path2) {
+        const fetchReq1 = fetch(path).then((res) => res.json());
+        const fetchReq2 = fetch(path2).then((res) => res.json());
 
-        if (response.status === 200) {
-            let json = await response.json();
-            this.json = json;
-        }
+        const allData = Promise.all([fetchReq1, fetchReq2]);
+
+        // merge into a single mergedQuestionsData object.
+        let response = await allData.then((res) => {
+            let mergedQuestionsData = res[0];
+            for (const objkey in res[0].questions) {
+                let questions = mergedQuestionsData.questions[objkey];
+                for (let i = 0; i < questions.length; i++) {
+                    mergedQuestionsData.questions[objkey][i].cta = res[1].questions[objkey][i]['cta'];
+                }
+            }
+            this.mergedQuestionsData = mergedQuestionsData;
+        });
+
     }
   
     // Setup the widgets.
     async setup() {
         // Get all the questionData for the various widgets.
-        await this.getQuestionData();
+        await this.getQuestionData(this.jsonPath, this.ctaJsonPath);
         const questionsData = this.json;
-        
+        const ctaData = this.ctaJson;
+
         // Setup the individual widget with listeners
         const targetItems = document.querySelectorAll('.davoswidget');
         
         targetItems.forEach(targetItem => {
             var widgetID = targetItem.dataset.widget;
             // Check widget exists to limit errors in the JSON.
-            if (questionsData.questions.hasOwnProperty(widgetID)) {
-                this.setupIndividual(widgetID, questionsData.questions[widgetID], targetItem);
+            if (this.mergedQuestionsData.questions.hasOwnProperty(widgetID)) {
+                this.setupIndividual(widgetID, this.mergedQuestionsData.questions[widgetID], targetItem);
             }
         });        
 
@@ -139,6 +152,18 @@ class DavosWidget {
                     let resultText = questionsData[key].response;
                     document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-response').innerText = resultText;
                 }
+
+                // CTA
+                if (questionsData[key].hasOwnProperty('cta')) {
+                    const cta = document.createElement('a');
+                    cta.innerHTML = questionsData[key].cta.linktext;
+                    cta.setAttribute('href', questionsData[key].cta.url);
+                    cta.setAttribute('class', 'davoswidget-cta');
+
+                    const ctaElementWrapper = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-cta-wrapper');
+                    ctaElementWrapper.parentNode.replaceChild(cta, ctaElementWrapper);
+                }
+
                 event.preventDefault();
             });
         }
@@ -192,8 +217,6 @@ class DavosWidget {
 
                 // CTA
                 if (questionsData[key].hasOwnProperty('cta')) {
-                    console.log(questionsData[key].cta.url)
-
                     const cta = document.createElement('a');
                     cta.innerHTML = questionsData[key].cta.linktext;
                     cta.setAttribute('href', questionsData[key].cta.url);

@@ -1,0 +1,58 @@
+{
+    "questions": {
+        "billionaires": [
+            {
+                "cta": {
+                    "url": "http://donate.oxfam.org",
+                    "linktext": "Donate"
+                }
+            },
+            {
+                "cta": {
+                    "url": "http://donate.oxfam.org",
+                    "linktext": "Social"
+                }
+            }
+        ],
+        "food": [
+            {
+                "cta": {
+                    "url": "http://donate.oxfam.org",
+                    "linktext": "Other"
+                }
+            }
+        ],
+        "energy": [
+            {
+                "cta": {
+                    "url": "http://donate.oxfam.org",
+                    "linktext": "Donate"
+                }
+            }
+        ],
+        "qol": [
+            {
+                "cta": {
+                    "url": "http://donate.oxfam.org",
+                    "linktext": "Donate"
+                }
+            }
+        ],
+        "wages": [
+            {
+                "cta": {
+                    "url": "http://donate.oxfam.org",
+                    "linktext": "Donate"
+                }
+            }
+        ],
+        "tax": [
+            {
+                "cta": {
+                    "url": "http://donate.oxfam.org",
+                    "linktext": "Donate"
+                }
+            }
+        ]
+    }
+}

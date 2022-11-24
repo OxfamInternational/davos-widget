@@ -5,11 +5,7 @@
                 "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you must use logic in that sense. (European)",
                 "type": "options",
                 "options": ["Tom Cruise", "Penelope Cruz", "Rosalia", "Adam Sandler"],
-                "answer": "Tom Cruise",
-                "cta": {
-                    "url": "http://donate.oxfam.org",
-                    "linktext": "Donate"
-                }
+                "answer": "Tom Cruise"
             },
             {
                 "question": "I mean the truth is, I've never had it so good in terms of taxes. I am paying the lowest tax rate that I've ever paid in my life.",
