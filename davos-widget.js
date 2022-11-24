@@ -59,10 +59,6 @@ class DavosWidget {
         questionWrapper.setAttribute('class','davoswidget-question davoswidget-question-type-' + questionType);
         questionWrapper.setAttribute('data-davoswidget-questionkey', key);
 
-        
-
-        
-
         if (questionType === "options") {
             // Setup the question element
             const questionElement = document.createElement('p');
@@ -173,6 +169,9 @@ class DavosWidget {
             const questionWrapper = this.questionBuilder(questionData,i);
             const targetDiv = document.querySelector('.' + selector + ' .davoswidget-questions');
             targetDiv.appendChild(questionWrapper);
+            if (i > 0) {
+                questionWrapper.hidden = true;
+            }
             i = i+1;
         });
 
