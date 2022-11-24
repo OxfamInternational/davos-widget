@@ -147,6 +147,13 @@ class DavosWidget {
         ctaElementWrapper.appendChild(ctaElement);
         questionWrapper.appendChild(ctaElementWrapper);
 
+        // Setup next element.
+        const nextElementWrapper = document.createElement('div');
+        nextElementWrapper.setAttribute('class','davoswidget-next-wrapper');
+        const nextElement = document.createElement('span');
+        nextElementWrapper.appendChild(nextElement);
+        questionWrapper.appendChild(nextElementWrapper);
+
         return questionWrapper;
         
     }
@@ -243,6 +250,31 @@ class DavosWidget {
                 });
                 const clickedButton = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] a[data-davoswidget-option="' + choice + '"]');
                 clickedButton.classList.add("active");
+
+                // Is there another question after this one?
+                const arraySize = questionsData.length -1;
+                const currentQuestionKey = parseInt(key)
+                if (currentQuestionKey < arraySize) {
+                    const next = document.createElement('a');
+                    next.innerHTML = "Next Question";
+                    next.setAttribute('href', '#');
+                    next.setAttribute('class', 'davoswidget-next');
+                    const nextElementWrapper = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-next-wrapper');
+                    const nextElement = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-next-wrapper > *');
+                    nextElementWrapper.replaceChild(next, nextElement);
+                    next.addEventListener('click', function optionClicked(event) {
+                        // Hide/Show questions
+                        let questions = document.querySelectorAll('.' + selector + ' .davoswidget-question');
+                        questions.forEach(question => {
+                            question.hidden = true;
+                        });
+                        let currentQuestion = document.querySelector('.' + selector + ' .davoswidget-question:nth-child(' + (currentQuestionKey+2) + ')');
+                        currentQuestion.hidden = false;
+                        event.preventDefault();
+                    });
+
+                    
+                }
 
                 // CTA
                 if (questionsData[key].hasOwnProperty('cta')) {
