@@ -51,7 +51,7 @@ class DavosWidget {
 
     }
 
-    questionBuilder(questionData, key) {
+    questionBuilder(questionData, key, widgetID) {
 
         const questionType = questionData['type'];
 
@@ -83,7 +83,7 @@ class DavosWidget {
         if (questionType === "multiplechoice") {
             // Setup the question element
             const questionElement = document.createElement('p');
-            questionElement.innerHTML = questionData.question;
+            questionElement.innerHTML = questionData.question + '<p>Please select all that apply</p>';
             questionWrapper.appendChild(questionElement);
 
             // Setup the option elements
@@ -104,7 +104,7 @@ class DavosWidget {
             const submit = document.createElement('a');
             submit.setAttribute('href','#');
             submit.setAttribute('class', 'davoswidget-submit');
-            submit.innerHTML = "Submit response";
+            submit.innerHTML = "Submit";
             questionWrapper.appendChild(submit);
         }
         if (questionType === "currency") {
@@ -116,16 +116,24 @@ class DavosWidget {
             questionElement.innerHTML = questionData.question;
             qaWrapper.appendChild(questionElement);
 
-            // Setup the option elements
-            var textfield=document.createElement('input');
-            textfield.setAttribute('type','text');
-            qaWrapper.appendChild(textfield);
+            // Setup the currency label element
+            var label=document.createElement('label');
+            label.setAttribute('for',widgetID);
+            label.innerHTML = 'USD';
+            qaWrapper.appendChild(label);
 
+            // Setup the number elements
+            var textfield=document.createElement('input');
+            textfield.setAttribute('type','number');
+            textfield.setAttribute('placeholder','10');
+            textfield.setAttribute('name',widgetID);
+            textfield.setAttribute('id',widgetID);
+            qaWrapper.appendChild(textfield);
 
             const submit = document.createElement('a');
             submit.setAttribute('href','#');
             submit.setAttribute('class', 'davoswidget-submit');
-            submit.innerHTML = "Submit response";
+            submit.innerHTML = "Submit";
             questionWrapper.appendChild(qaWrapper);
             questionWrapper.appendChild(submit);
         }
@@ -166,7 +174,7 @@ class DavosWidget {
 
         let i = 0;
         questionsData.forEach(questionData => {
-            const questionWrapper = this.questionBuilder(questionData,i);
+            const questionWrapper = this.questionBuilder(questionData,i, widgetID);
             const targetDiv = document.querySelector('.' + selector + ' .davoswidget-questions');
             targetDiv.appendChild(questionWrapper);
             if (i > 0) {
@@ -195,6 +203,14 @@ class DavosWidget {
                     const ctaElementWrapper = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-cta-wrapper');
                     ctaElementWrapper.parentNode.replaceChild(cta, ctaElementWrapper);
                 }
+
+                submitLink.remove();
+
+                // Add disabled class to options on this widget.
+                const optionElements = document.querySelectorAll('.' + selector + ' .davoswidget-multiplechoice > li > a')
+                optionElements.forEach(optionElementDisable => {
+                    optionElementDisable.classList.add("disabled");
+                });
 
                 event.preventDefault();
             });
@@ -225,9 +241,17 @@ class DavosWidget {
         const optionElements = document.querySelectorAll('.' + selector + ' .davoswidget-options > li > a')
         optionElements.forEach(optionElement => {
             optionElement.addEventListener('click', function optionClicked(event) {
+                
                 let choice = this.dataset.davoswidgetOption
                 let key = this.parentNode.parentNode.parentNode.dataset.davoswidgetQuestionkey;
                 let resultText = '';
+                const clickedButton = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] a[data-davoswidget-option="' + choice + '"]');
+
+                // The options can only be clicked once, this allows disabling and styling.
+                if (clickedButton.classList.contains("disabled")) {
+                    return;
+                }
+                
                 if (questionsData[key].hasOwnProperty('responses')) {
                     resultText = resultText + questionsData[key].responses[choice] + ' ';
                 }
@@ -247,7 +271,7 @@ class DavosWidget {
                 activeButtons.forEach(activeButton => {
                     activeButton.classList.remove("active");
                 });
-                const clickedButton = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] a[data-davoswidget-option="' + choice + '"]');
+                
                 clickedButton.classList.add("active");
 
                 // Is there another question after this one?
@@ -285,6 +309,11 @@ class DavosWidget {
                     const ctaElement = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-cta-wrapper > *');
                     ctaElementWrapper.replaceChild(cta, ctaElement);
                 }
+
+                // Add disabled class to options on this widget.
+                optionElements.forEach(optionElementDisable => {
+                    optionElementDisable.classList.add("disabled");
+                });
 
                 event.preventDefault();
             });
