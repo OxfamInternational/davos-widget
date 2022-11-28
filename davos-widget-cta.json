@@ -10,7 +10,7 @@
             {
                 "cta": {
                     "url": "http://donate.oxfam.org",
-                    "linktext": "Social"
+                    "linktext": "Donate"
                 }
             }
         ],
@@ -18,7 +18,7 @@
             {
                 "cta": {
                     "url": "http://donate.oxfam.org",
-                    "linktext": "Other"
+                    "linktext": "Tweet #TaxTheRich"
                 }
             }
         ],
@@ -26,7 +26,7 @@
             {
                 "cta": {
                     "url": "http://donate.oxfam.org",
-                    "linktext": "Donate"
+                    "linktext": "Join the Movement"
                 }
             }
         ],
