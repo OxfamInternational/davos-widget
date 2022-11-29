@@ -7,8 +7,15 @@
     --ox-grey-light: #ececec;
     --ox-grey-dark: #545454;
     --ox-white: #fff;
-    font-family: Roboto,arial,helvetica,sans-serif;
+    --ox-blue: #0b9cda;
     margin: 10px 0 20px;
+    --border-radius: 20px;
+}
+
+/* A couple of resets for consistency */
+.davoswidget * {
+    box-sizing: border-box;
+    border: 0 solid;
 }
 
 /* CTA links */
@@ -46,25 +53,21 @@
     background-color: var(--ox-orange-dark);
 }
 
-
-/* Questions */
-.davoswidget-question > p {
-    font-weight: bold;
+/* Quesitons */
+.davoswidget-question {
+    flex-basis: 100%;
 }
 
 /* Responses */
 .davoswidget-response {
-    text-align: center;
     margin-top: 20px;
-    font-style: italic;
-    font-size: 1.8rem;
 }
 
-/* FormFields */
+/* Options/Multichoice */
 .davoswidget-options,
 .davoswidget-multiplechoice {
     margin: 0;
-    padding: 15px 20px;
+    padding: 15px 0;
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
@@ -75,46 +78,27 @@
     flex: 1 0 0;
 }
 .davoswidget-options li > a,
-.davoswidget-multiplechoice li > a,
-.davoswidget-submit {
-    display: block;
-    background-color: var(--ox-green);
-    color: var(--ox-white);
-    border-radius: 20px;
-    padding: 14px 12px;
+.davoswidget-multiplechoice li > a {
+    background-color: var(--ox-white);
+    color: var(--ox-black);
+    border-radius: var(--border-radius);
+    padding: 20px 12px;
     text-align: center;
     text-decoration: none;
-    border: 1px dashed var(--ox-white);
+    border: 1px solid var(--ox-black);
     margin: 10px 0 0;
-}
-.davoswidget-options li > a.active,
-.davoswidget-options li > a:hover,
-.davoswidget-multiplechoice li > a.active,
-.davoswidget-multiplechoice li > a:hover,
-.davoswidget-submit:hover {
-    background-color: var(--ox-white);
-    color: var(--ox-green);
-    border-color: var(--ox-green);
-}
-.davoswidget a.disabled:hover {
-    cursor: default;
-}
-.davoswidget a.disabled.active {
-    background: var(--ox-grey-light);
-}
-.davoswidget a.disabled:hover:not(.active) {
-    color: var(--ox-black);
-}
-.davoswidget-options li > a,
-.davoswidget-multiplechoice li > a {
     height: calc(100% - 40px);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .davoswidget-options li > a.active,
-.davoswidget-multiplechoice a.active {
-    font-weight: bold;
+.davoswidget-options li > a:hover,
+.davoswidget-multiplechoice li > a.active,
+.davoswidget-multiplechoice li > a:hover {
+    background-color: var(--ox-green);
+    color: var(--ox-white);
+    border-color: var(--ox-green);
 }
 .davoswidget-options a.disabled,
 .davoswidget-multiplechoice a.disabled {
@@ -122,30 +106,65 @@
     color: var(--ox-black);
     border-color: var(--ox-black);
 }
+
+/* Disabled fields */
+.davoswidget a.disabled:hover {
+    cursor: default;
+}
+.davoswidget a.disabled:not(.active) {
+    background: var(--ox-grey-light);
+    color: var(--ox-grey-dark);
+    border: 1px dashed var(--ox-grey-dark);
+}
+.davoswidget a.disabled:hover:not(.active) {
+    color: var(--ox-black);
+}
+
+/* Submit buttons */
 .davoswidget-submit {
-    margin: 15px 20px;
+    display: block;
+    background-color: var(--ox-green);
+    color: var(--ox-white);
+    border-radius: var(--border-radius);
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 0;
     text-transform:uppercase;
     font-weight: bold;
     font-size: 1.4rem;
     border-style: solid;
     padding: 20px 20px;
 }
+.davoswidget-submit:hover {
+    background-color: var(--ox-blue);
+    color: var(--ox-white);
+}
+
+/* Textareas */
 .davoswidget textarea {
     width: 100%;
     min-height: 50px;
 }
+
+/* General inputs */
 .davoswidget input[type="number"],
 .davoswidget input[type="text"] {
-    border: 2px solid var(--ox-grey-dark);
-    border-radius: 5px;
-    font-size: 1.6rem;
-    padding: 5px 10px;
-    width: 100px;
+    border: 1px solid var(--ox-grey-dark);
+    border-radius: var(--border-radius);
+    padding: 10px;
 }
+
+/* Label */
 .davoswidget label {
-    font-size: 1.6rem;
-    padding: 5px 0;
-    border: 2px solid transparent;
+    /* font-size: 1.6rem; */
+    /* padding: 5px 0; */
+    /* border: 2px solid transparent; */
+
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 /* Flex */
@@ -153,7 +172,7 @@
     display: flex;
     gap: 20px;
 }
-.davoswidget .flex > *:nth-child(1) {
+/* .davoswidget .flex > *:nth-child(1) {
     flex-basis: 50%;
     flex-grow: 0;
-}
+} */

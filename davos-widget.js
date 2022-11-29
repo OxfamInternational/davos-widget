@@ -62,6 +62,7 @@ class DavosWidget {
         if (questionType === "options") {
             // Setup the question element
             const questionElement = document.createElement('p');
+            questionElement.setAttribute('class','davoswidget-question');
             questionElement.innerHTML = questionData.question;
             questionWrapper.appendChild(questionElement);
 
@@ -83,6 +84,7 @@ class DavosWidget {
         if (questionType === "multiplechoice") {
             // Setup the question element
             const questionElement = document.createElement('p');
+            questionElement.setAttribute('class','davoswidget-question');
             questionElement.innerHTML = questionData.question + '<p>Please select all that apply</p>';
             questionWrapper.appendChild(questionElement);
 
@@ -113,6 +115,7 @@ class DavosWidget {
 
             // Setup the question element
             const questionElement = document.createElement('p');
+            questionElement.setAttribute('class','davoswidget-question');
             questionElement.innerHTML = questionData.question;
             qaWrapper.appendChild(questionElement);
 
