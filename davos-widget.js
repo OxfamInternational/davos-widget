@@ -1,3 +1,20 @@
+
+
+function buildCta(ctaData) {
+    const cta = document.createElement('a');
+    cta.innerHTML = ctaData.linktext;
+    if (ctaData.type === 'tweet') {
+        cta.setAttribute('href', 'https://twitter.com/intent/tweet?button_hashtag=LoveTwitter&ref_src=twsrc%5Etfw');
+        cta.setAttribute('data-show-count', 'false');
+        cta.setAttribute('class', 'twitter-hashtag-button');
+    }
+    else if (ctaData.type === 'url') {
+        cta.setAttribute('href', ctaData.url);
+        cta.setAttribute('class', 'davoswidget-cta');
+    }
+    return cta;
+}
+
 class DavosWidget {
 
     // Setup some base variables
@@ -165,6 +182,8 @@ class DavosWidget {
         
     }
 
+    
+
     // Setup an individual widget.
     setupIndividual(widgetID, questionsData, targetItem) {
         const selector = 'davoswidget-' + widgetID;
@@ -198,13 +217,14 @@ class DavosWidget {
 
                 // CTA
                 if (questionsData[key].hasOwnProperty('cta')) {
-                    const cta = document.createElement('a');
-                    cta.innerHTML = questionsData[key].cta.linktext;
-                    cta.setAttribute('href', questionsData[key].cta.url);
-                    cta.setAttribute('class', 'davoswidget-cta');
-
                     const ctaElementWrapper = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-cta-wrapper');
+                    const cta = buildCta(questionsData[key].cta);
                     ctaElementWrapper.parentNode.replaceChild(cta, ctaElementWrapper);
+                    if (questionsData[key].cta.type === 'tweet') {
+                        twttr.widgets.load(
+                            document.getElementById("container")
+                        );
+                    }
                 }
 
                 submitLink.remove();
@@ -304,13 +324,15 @@ class DavosWidget {
 
                 // CTA
                 if (questionsData[key].hasOwnProperty('cta')) {
-                    const cta = document.createElement('a');
-                    cta.innerHTML = questionsData[key].cta.linktext;
-                    cta.setAttribute('href', questionsData[key].cta.url);
-                    cta.setAttribute('class', 'davoswidget-cta');
                     const ctaElementWrapper = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-cta-wrapper');
                     const ctaElement = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-cta-wrapper > *');
+                    const cta = buildCta(questionsData[key].cta);
                     ctaElementWrapper.replaceChild(cta, ctaElement);
+                    if (questionsData[key].cta.type === 'tweet') {
+                        twttr.widgets.load(
+                            document.getElementById("container")
+                        );
+                    }
                 }
 
                 // Add disabled class to options on this widget.

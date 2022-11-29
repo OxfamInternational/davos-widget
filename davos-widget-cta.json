@@ -3,30 +3,34 @@
         "billionaires": [
             {
                 "cta": {
-                    "url": "https://twitter.com/intent/tweet?button_hashtag=LoveTwitter&ref_src=twsrc%5Etfw",
+                    "type": "tweet",
                     "linktext": "Tweet #TaxTheRich"
                 }
             },
             {
                 "cta": {
+                    "type": "url",
                     "url": "https://www-d8-dev.oxinfra.org/en/take-action/join-global-movement-change",
                     "linktext": "Join the Movement"
                 }
             },
             {
                 "cta": {
+                    "type": "url",
                     "url": "https://www-d8-dev.oxinfra.org/en/donate/global-emergency-fund",
                     "linktext": "Donate"
                 }
             },
             {
                 "cta": {
+                    "type": "url",
                     "url": "https://www-d8-dev.oxinfra.org/en/take-action/join-global-movement-change",
                     "linktext": "Join the Movement"
                 }
             },
             {
                 "cta": {
+                    "type": "url",
                     "url": "https://www-d8-dev.oxinfra.org/en/donate/global-emergency-fund",
                     "linktext": "Donate"
                 }
@@ -35,7 +39,7 @@
         "food": [
             {
                 "cta": {
-                    "url": "https://twitter.com/intent/tweet?button_hashtag=LoveTwitter&ref_src=twsrc%5Etfw",
+                    "type": "tweet",
                     "linktext": "Tweet #TaxTheRich"
                 }
             }
@@ -43,6 +47,7 @@
         "energy": [
             {
                 "cta": {
+                    "type": "url",
                     "url": "https://www-d8-dev.oxinfra.org/en/take-action/join-global-movement-change",
                     "linktext": "Join the Movement"
                 }
@@ -51,6 +56,7 @@
         "qol": [
             {
                 "cta": {
+                    "type": "url",
                     "url": "https://www-d8-dev.oxinfra.org/en/donate/global-emergency-fund",
                     "linktext": "Donate"
                 }
@@ -59,6 +65,7 @@
         "wages": [
             {
                 "cta": {
+                    "type": "url",
                     "url": "https://www-d8-dev.oxinfra.org/en/donate/global-emergency-fund",
                     "linktext": "Donate"
                 }
@@ -67,6 +74,7 @@
         "tax": [
             {
                 "cta": {
+                    "type": "url",
                     "url": "https://www-d8-dev.oxinfra.org/en/donate/global-emergency-fund",
                     "linktext": "Donate"
                 }
