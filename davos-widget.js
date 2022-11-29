@@ -256,18 +256,19 @@ class DavosWidget {
                     return;
                 }
                 
+                // Specific responses depending on choice
                 if (questionsData[key].hasOwnProperty('responses')) {
                     resultText = resultText + questionsData[key].responses[choice] + ' ';
                 }
-                if (questionsData[key].hasOwnProperty('response')) {
+                // Single response
+                else if (questionsData[key].hasOwnProperty('response')) {
                     resultText = resultText + questionsData[key].response;
                 }
-                else if (choice === questionsData[key]['answer']) {
-                    resultText = 'Correct';
+                // Reponse to show after the answer is rendered
+                else if (questionsData[key].hasOwnProperty('response_post')) {
+                    resultText = questionsData[key]['answer'] + ' ' + questionsData[key]['response_post'];
                 }
-                else {
-                    resultText = 'Wrong, the correct answer was ' + questionsData[key]['answer'];
-                }
+
                 document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-response').innerText = resultText;
 
                 // Manage the .active class

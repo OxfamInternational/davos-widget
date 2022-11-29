@@ -4,27 +4,31 @@
             {
                 "question": "I mean the truth is, I've never had it so good in terms of taxes. I am paying the lowest tax rate that I've ever paid in my life.",
                 "type": "options",
+                "response_post": "said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
                 "options": ["Elon Musk", "Warren Buffet", "Mark Zuckerberg", "James Cargill"],
                 "answer": "Warren Buffet"
             },
             {
                 "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you have to use logic in that sense.",
                 "type": "options",
+                "response_post": "said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
                 "options": ["Tom Cruise", "Penelope Cruz", "Rosalía", "Adam Sandler"],
                 "answer": "Penelope Cruz"
             },
              {
                 "question": "I mean the truth is, I've never had it so good in terms of taxes. I am paying the lowest tax rate that I've ever paid in my life.",
                 "type": "options",
+                "response_post": "said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
                 "options": ["Elon Musk", "Warren Buffet", "Mark Zuckerberg", "James Cargill"],
                 "answer": "Warren Buffet"
             },
             {
                 "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you have to use logic in that sense.",
                 "type": "options",
+                "response_post": "said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
                 "options": ["Tom Cruise", "Penelope Cruz", "Rosalía", "Adam Sandler"],
                 "answer": "Penelope Cruz"
-            },
+            }
         ],
         "food": [
             {
