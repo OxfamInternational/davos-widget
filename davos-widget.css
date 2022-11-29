@@ -10,6 +10,7 @@
     --ox-blue: #0b9cda;
     margin: 10px 0 20px;
     --border-radius: 20px;
+    --bottom-margin: 20px;
 }
 
 /* A couple of resets for consistency */
@@ -30,6 +31,7 @@
     text-decoration: none;
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
+    margin-bottom: var(--bottom-margin);
 }
 .davoswidget-cta,
 .davoswidget-cta:after {
@@ -56,11 +58,15 @@
 /* Quesitons */
 .davoswidget-question {
     flex-basis: 100%;
+    /* display: flex;
+    align-items:center;
+    justify-content:center; */
 }
 
 /* Responses */
 .davoswidget-response {
     margin-top: 20px;
+    margin-bottom: var(--bottom-margin);
 }
 
 /* Options/Multichoice */
@@ -76,6 +82,7 @@
 .davoswidget-multiplechoice li {
     list-style: none;
     flex: 1 0 0;
+    flex-basis: 20%;
 }
 .davoswidget-options li > a,
 .davoswidget-multiplechoice li > a {
@@ -153,6 +160,10 @@
     border-radius: var(--border-radius);
     padding: 10px;
 }
+.davoswidget input[type="number"] {
+    width: 80px;
+    text-align: center;;
+}
 
 /* Label */
 .davoswidget label {
@@ -171,6 +182,7 @@
 .davoswidget .flex {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 /* .davoswidget .flex > *:nth-child(1) {
     flex-basis: 50%;
