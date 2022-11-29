@@ -295,8 +295,6 @@ class DavosWidget {
                         currentQuestion.hidden = false;
                         event.preventDefault();
                     });
-
-                    
                 }
 
                 // CTA
@@ -311,10 +309,13 @@ class DavosWidget {
                 }
 
                 // Add disabled class to options on this widget.
-                optionElements.forEach(optionElementDisable => {
+                const elementClicked = event.target;
+                const clickedSet = elementClicked.parentNode.parentNode.parentNode.dataset.davoswidgetQuestionkey
+                const optionElementsToDisable = document.querySelectorAll('.' + selector + ' .davoswidget-question:nth-child(' + (parseInt(clickedSet)+1) + ') .davoswidget-options > li > a')
+                optionElementsToDisable.forEach(optionElementDisable => {
                     optionElementDisable.classList.add("disabled");
                 });
-
+                
                 event.preventDefault();
             });
         });
