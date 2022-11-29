@@ -319,6 +319,7 @@ class DavosWidget {
                     optionElementDisable.classList.add("disabled");
                 });
                 
+                console.log("clicked");
                 event.preventDefault();
             });
         });

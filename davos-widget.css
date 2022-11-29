@@ -28,7 +28,7 @@
     font-size: 1.5rem;
     font-weight: 700;
     font-family: TStar,sans-serif;
-    text-decoration: none;
+    text-decoration: none !important;
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
     margin-bottom: var(--bottom-margin);
@@ -58,9 +58,6 @@
 /* Quesitons */
 .davoswidget-question-text {
     flex-basis: 100%;
-    /* display: flex;
-    align-items:center;
-    justify-content:center; */
 }
 
 /* Responses */
@@ -134,7 +131,7 @@
     color: var(--ox-white);
     border-radius: var(--border-radius);
     text-align: center;
-    text-decoration: none;
+    text-decoration: none !important;
     margin: 15px 0;
     text-transform:uppercase;
     font-weight: bold;
@@ -167,10 +164,6 @@
 
 /* Label */
 .davoswidget label {
-    /* font-size: 1.6rem; */
-    /* padding: 5px 0; */
-    /* border: 2px solid transparent; */
-
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -184,7 +177,3 @@
     gap: 20px;
     align-items: center;
 }
-/* .davoswidget .flex > *:nth-child(1) {
-    flex-basis: 50%;
-    flex-grow: 0;
-} */

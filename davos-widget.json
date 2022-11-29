@@ -2,39 +2,33 @@
     "questions": {
         "billionaires": [
             {
-                "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you must use logic in that sense. (European)",
-                "type": "options",
-                "options": ["Tom Cruise", "Penelope Cruz", "Rosalia", "Adam Sandler"],
-                "answer": "Tom Cruise"
-            },
-            {
-                "question": "I mean the truth is, I've never had it so good in terms of taxes. I am paying the lowest tax rate that I've ever paid in my life.",
+                "question": "My secretary pays more tax than me",
                 "type": "options",
                 "options": ["Elon Musk", "Warren Buffet", "Mark Zuckerberg", "James Cargill"],
                 "answer": "Elon Musk"
             },
             {
-                "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you must use logic in that sense. (European)",
+                "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you have to use logic in that sense.",
                 "type": "options",
-                "options": ["Tom Cruise", "Penelope Cruz", "Rosalia", "Adam Sandler"],
+                "options": ["Tom Cruise", "Penelope Cruz", "Rosalía", "Adam Sandler"],
                 "answer": "Tom Cruise"
             },
             {
-                "question": "I mean the truth is, I've never had it so good in terms of taxes. I am paying the lowest tax rate that I've ever paid in my life.",
+                "question": "The tax authorities saw that I was dating a Spanish citizen and began to salivate. It is clear that they wanted to go after my money no matter how.",
                 "type": "options",
-                "options": ["Elon Musk", "Warren Buffet", "Mark Zuckerberg", "James Cargill"],
-                "answer": "Elon Musk"
+                "options": ["Sofía Vergara", "Shakira", "JLO", "Jay-Z"],
+                "answer": "Shakira"
             },
             {
-                "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you must use logic in that sense. (European)",
+                "question": "\"You paid for all of this\" thanking employees after successful space flight",
                 "type": "options",
-                "options": ["Tom Cruise", "Penelope Cruz", "Rosalia", "Adam Sandler"],
-                "answer": "Tom Cruise"
+                "options": ["Elon Musk", "Jeff Bezos", "Kriss Jenner", "Jack Ma"],
+                "answer": "Jeff Bezos"
             }
         ],
         "food": [
             {
-                "question": "In recent months, how much more are you spending on food?",
+                "question": "Roughly speaking, how much more are you spending on food in recent months?",
                 "type": "currency",
                 "response": "The wealth of food billionaires increased by $x bn in the last year whilst the pandemic and runaway food prices have led to poverty and a cost-of-living crisis for the many, we must #TaxTheRich"
             }
@@ -63,7 +57,7 @@
                     "Yes": "Billionaires continue to profit.",
                     "No": "Well, with the reality of inflation, X% of workers have a real time pay cut because of inflation. "
                 },
-                "response": "Analysis by Oxfam of wages of xx countries finds that in 2022, one in three of the world’s workers will see their wages outpaced by inflation … (solution needed )*"
+                "response": "Analysis by Oxfam of wages of xx countries finds that in 2022, one in three of the world's workers will see their wages outpaced by inflation ... (solution needed)*"
             }
         ],
         "tax": [
