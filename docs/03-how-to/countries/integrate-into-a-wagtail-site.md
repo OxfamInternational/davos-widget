@@ -26,30 +26,11 @@ Note that you can use index.html as a working example.
 6. Insert the widget placeholders into your content where you want them to appear: `<span class="davoswidget" data-widget="billionaires"></span>`
 7. If you are going to use the "tweet" cta type, then you will likely also need to add the below js too.
 
-```javascript
-<script>window.twttr = (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0],
-              t = window.twttr || {};
-            if (d.getElementById(id)) return t;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
-          
-            t._e = [];
-            t.ready = function(f) {
-              t._e.push(f);
-            };
-          
-            return t;
-          }(document, "script", "twitter-wjs"));</script>
-```
-
 ## Some considerations
 
 - You may need to update the js/css/json files as improvements are made to the core widget, so note locations and process' appropriately.
 - The `davos-widget-cta.json` is open for changes, and whilst `davos-widget.json` can be done in a similar way, this isn't supported by OI.
-- If you use the "tweet" cta type, you may get js conflicts due to adding the library tweets, this will need to be dealt with on a site by site basis.
+- If you use the "tweet" cta type, you may get js conflicts due to this script adding twitters widget.js, this will need to be dealt with on a site by site basis.
 
 ## Troubleshooting
 
