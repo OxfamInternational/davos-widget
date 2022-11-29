@@ -252,6 +252,7 @@ class DavosWidget {
 
                 // The options can only be clicked once, this allows disabling and styling.
                 if (clickedButton.classList.contains("disabled")) {
+                    event.preventDefault();
                     return;
                 }
                 
@@ -319,7 +320,6 @@ class DavosWidget {
                     optionElementDisable.classList.add("disabled");
                 });
                 
-                console.log("clicked");
                 event.preventDefault();
             });
         });
