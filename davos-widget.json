@@ -2,29 +2,29 @@
     "questions": {
         "billionaires": [
             {
-                "question": "My secretary pays more tax than me",
+                "question": "I mean the truth is, I've never had it so good in terms of taxes. I am paying the lowest tax rate that I've ever paid in my life.",
                 "type": "options",
                 "options": ["Elon Musk", "Warren Buffet", "Mark Zuckerberg", "James Cargill"],
-                "answer": "Elon Musk"
+                "answer": "Warren Buffet"
             },
             {
                 "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you have to use logic in that sense.",
                 "type": "options",
                 "options": ["Tom Cruise", "Penelope Cruz", "Rosalía", "Adam Sandler"],
-                "answer": "Tom Cruise"
+                "answer": "Penelope Cruz"
+            },
+             {
+                "question": "I mean the truth is, I've never had it so good in terms of taxes. I am paying the lowest tax rate that I've ever paid in my life.",
+                "type": "options",
+                "options": ["Elon Musk", "Warren Buffet", "Mark Zuckerberg", "James Cargill"],
+                "answer": "Warren Buffet"
             },
             {
-                "question": "The tax authorities saw that I was dating a Spanish citizen and began to salivate. It is clear that they wanted to go after my money no matter how.",
+                "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you have to use logic in that sense.",
                 "type": "options",
-                "options": ["Sofía Vergara", "Shakira", "JLO", "Jay-Z"],
-                "answer": "Shakira"
+                "options": ["Tom Cruise", "Penelope Cruz", "Rosalía", "Adam Sandler"],
+                "answer": "Penelope Cruz"
             },
-            {
-                "question": "\"You paid for all of this\" thanking employees after successful space flight",
-                "type": "options",
-                "options": ["Elon Musk", "Jeff Bezos", "Kriss Jenner", "Jack Ma"],
-                "answer": "Jeff Bezos"
-            }
         ],
         "food": [
             {
