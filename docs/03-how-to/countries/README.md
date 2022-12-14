@@ -9,7 +9,7 @@
 
 ## To access the widget plugins please
 
-[access the widget](access-the-widget.md)
+[Email text about how to access the widget code](access-the-widget.md)
 
 ## Before editing the plugins please read the below guides
 
