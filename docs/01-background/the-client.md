@@ -2,6 +2,6 @@
 
 ## Who are they
 
-- <names> - <roles>
+- [maureen.gitau@oxfam.org](mailto:maureen.gitau@oxfam.org) - Product Owner
 
 ## What do they do
