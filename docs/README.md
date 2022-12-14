@@ -1,5 +1,9 @@
 # Documentation
 
+- If you are a country developer please go to the [countries documentation folder](03-how-to/countries).
+
+---
+
 ## [1. Background](01-background/)
 
 - [The Client](01-background/the-client.md)
