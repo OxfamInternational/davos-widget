@@ -1,18 +1,16 @@
-# How to integrate into a Wagtail site
-
-This will likely need input from Theo from Torchbox as part of the Oxfam GB integration, but we would hope this wouldn't be overly complicated.
+# How to integrate into HTML
 
 Note that you can use index.html as a working example.
 
 1. Download this repo from GitHub
-2. Copy across the below files to your public assets directory (note down locations incase you need to update with future improvements)
+2. Copy across the below files to an `<assets>/davos/` directory (note down the locations incase you need to update with future improvements)
     1. `davos-widget-cta.json`
     2. `davos-widget.json`
     3. `davos-widget.css`
     4. `davos-widget.js`
-3. Modify the `davos-widget-cta.json` to use your required cta links.
-4. Add `<link rel="stylesheet" href="davos-widget.css">` to your site
-5. Add the below js so it is loaded in the foot of the body
+4. Modify the `davos-widget-cta.json` to use your required cta links.
+5. Add `<link rel="stylesheet" href="davos-widget.css">` to your site
+6. Add the below js so it is loaded in the foot of the body
 
   ```javascript
     <!-- The js must go at bottom of the page so it can access the DOM -->
