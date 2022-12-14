@@ -1,4 +1,4 @@
-## Countries How To Guids
+## Countries How To Guides
 
 > Dear Developers/Comms Leads,
 > 
@@ -37,6 +37,11 @@ in the correct format. This will then get replaced by the js script.
 5. Wages - *Optional* `<span class="davoswidget" data-widget="wages"></span>`
 
 6. Tax - *Optional* `<span class="davoswidget" data-widget="tax"></span>`
+
+## Editing advise
+
+- Only edit the CTAs (not the widget text itself).
+- Twitter links need to be in a particular format, for help see our doc on [creating tweet urls](create-tweet-url.md).
 
 ## Further questions
 
