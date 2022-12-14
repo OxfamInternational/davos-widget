@@ -40,7 +40,7 @@ in the correct format. This will then get replaced by the js script.
 
 ## Editing advise
 
-- Only edit the CTAs (not the widget text itself).
+- Only [edit the CTAs](edit-the-local-ctas.md) (not the widget text itself).
 - Twitter links need to be in a particular format, for help see our doc on [creating tweet urls](create-tweet-url.md).
 
 ## Further questions
