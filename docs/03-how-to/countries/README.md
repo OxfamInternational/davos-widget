@@ -45,5 +45,9 @@ in the correct format. This will then get replaced by the js script.
 
 ## Further questions
 
-If you have any support questions and would like to be added to the Teams
+First we would suggest you look at the [faqs document](/docs/04-reference/faqs.md)
+for commonly asked questions.  We will try to keep this up to date as things
+come through.
+
+If you still have any support questions and would like to be added to the Teams
 support group, please send them through to [maureen.gitau@oxfam.org](mailto:maureen.gitau@oxfam.org)
