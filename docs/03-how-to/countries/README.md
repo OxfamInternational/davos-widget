@@ -9,7 +9,9 @@
 
 ## To access the widget plugins please
 
-[Email text about how to access the widget code](access-the-widget.md)
+1. If you don't have one already, [create a Github account here](https://github.com/)
+2. [Request access to this Oxfam.org file here](https://github.com/OxfamInternational/davos-widget)
+3. If you have any access challenges, please message [maureen.gitau@oxfam.org](mailto:maureen.gitau@oxfam.org) on teams for support.
 
 ## Before editing the plugins please read the below guides
 
@@ -18,10 +20,12 @@
     1. [Drupal](integrations/integrate-into-a-drupal-site.md)
     2. [Wagtail](integrations/integrate-into-a-wagtail-site.md)
     3. [HTML](integrations/integrate-into-html.md)
-3. Dos and Do not's  - **tbc from Maureen?**
-4. [View the layout of the landing page on OI here](https://www.oxfam.org/en/take-action/campaigns/shocking-billionaire-stats-10-years) - **currently unpublished**
+3. [View the layout of the landing page on OI here]
+    1. [On OI live site](https://www.oxfam.org/en/take-action/campaigns/shocking-billionaire-stats-10-years) (currently unpublished)
+    2. [On OI dev site](https://www-d8-dev.oxinfra.org/en/take-action/campaigns/shocking-billionaire-stats-10-years) (used for testing and demo) 
 
 ## We have an option of 5 widgets
+Widget files can be found here: [https://github.com/OxfamInternational/davos-widget](https://github.com/OxfamInternational/davos-widget)
 
 To use each one, just go through the above steps, and use the placeholder code
 in the correct format. This will then get replaced by the js script.
