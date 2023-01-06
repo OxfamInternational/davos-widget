@@ -1,16 +1,31 @@
 /* Widget wrapper */
 .davoswidget {
     --ox-green: #44841a;
+    --ox-green-light: #BECE45;
     --ox-orange: #f16e22;
-    --ox-orange-dark: #9d4816;
+    --ox-orange-dark: #9D4816;
     --ox-black: #545454;
     --ox-grey-light: #ececec;
     --ox-grey-dark: #545454;
     --ox-white: #fff;
-    --ox-blue: #0b9cda;
+    --ox-blue: #065E84;
+    --ox-beige: #eaeade;
     margin: 10px 0 20px;
+    padding: 23px;
     --border-radius: 20px;
     --bottom-margin: 20px;
+    --padding: 8px;
+    --padding-lg: 15px;
+    --padding-xl: 25px;
+    --media-screen: 550px;
+    max-width: 725px;
+    margin: auto;
+}
+
+@media screen and (max-width: 550px) {
+    .davoswidget {
+        padding: 23px 0;
+    }
 }
 
 /* A couple of resets for consistency */
@@ -19,20 +34,112 @@
     border: 0 solid;
 }
 
+.davoswidget-question h1 {
+    margin: 0;
+    font-size: larger;
+    color: var(--ox-blue);
+    font-weight: bold;
+    font-family: TStar,sans-serif;
+    padding: 0  0 var(--padding) 0;
+}
+
+.davoswidget-question h2 {
+    margin: 0;
+    font-size: medium;
+    color: var(--ox-black);
+    font-style: italic;
+    font-weight: lighter;
+    font-family: TStar,sans-serif;
+}
+
+.davoswidget-question p {
+    margin: 0 0 var(--padding-lg);
+    color: var(--ox-black);
+    font-family: Roboto, sans-serif;
+}
+
+.davoswidget-next-wrapper {
+    height: fit-content;
+}
+
+.davoswidget-next-wrapper {
+    margin: 10px 0;
+}
+
+.davoswidget-next-wrapper a {
+    color: var(--ox-black);
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+}
+
+.davoswidget-next-wrapper a:hover {
+    color: var(--ox-blue);
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+}
+
+.davoswidget-question-content {
+    padding: var(--padding-xl);
+    background-color: var(--ox-beige);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.davoswidget-righthand {
+    width: 66%;
+}
+
+.davoswidget-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: var(--padding);
+}
+
+@media screen and (max-width: 550px) {
+    .davoswidget-question-content {
+        flex-direction: column;
+    }
+    .davoswidget-righthand {
+        width: 100%;
+    }
+    .davoswidget-left {
+        flex-direction: row;
+        gap: 5px;
+        padding-bottom: var(--padding-lg);
+    }
+    .davoswidget-next-wrapper {
+        margin: 5px 0;
+    }
+}
+
 /* CTA links */
+.davoswidget-cta-wrapper {
+    display: flex;
+    padding: 0;
+    height: fit-content;
+}
+
 .davoswidget-cta {
     display: inline-block;
     position: relative;
     color: var(--ox-white);
     padding: 0.75rem 1em;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: medium;
+    font-weight: 600;
     font-family: TStar,sans-serif;
     text-decoration: none !important;
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
-    margin-bottom: var(--bottom-margin);
+    margin: var(--bottom-margin) 0 0 0;
+    max-width: fit-content;
 }
+
+@media screen and (max-width: 550px) {
+    .davoswidget-cta { margin-top: 0; }
+}
+
 .davoswidget-cta,
 .davoswidget-cta:after {
     background-color: var(--ox-orange);
@@ -52,45 +159,78 @@
 }
 .davoswidget-cta:hover:after,
 .davoswidget-cta:hover {
-    background-color: var(--ox-orange-dark);
+    background-color: var(--ox-white);
+    color: var(--ox-orange)
 }
 
 /* Quesitons */
+
 .davoswidget-question-text {
     flex-basis: 100%;
+    font-weight: bold;
+    border-left: 3px solid var(--ox-orange);
+    padding: 0 var(--padding-lg);
+    margin: 0 var(--padding)
 }
 
 /* Responses */
+
+/* TODO: fix response margin when hidden */
 .davoswidget-response {
-    margin-top: 20px;
-    margin-bottom: var(--bottom-margin);
+    margin: 25px var(--padding-lg) 0;
+    font-family: Roboto, sans-serif;
+    color: var(--ox-black);
+}
+
+.davoswidget-currency {
+    display: flex;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    gap: 12px;
+    padding: var(--padding-lg) var(--padding-lg) var(--padding);
 }
 
 /* Options/Multichoice */
 .davoswidget-options,
 .davoswidget-multiplechoice {
-    margin: 0;
-    padding: 15px 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+    margin: var(--padding-lg) 0 0;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* gap: 12px; */
+    font-family: Roboto, sans-serif;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-inline-start: 0px;
 }
+
 .davoswidget-options li,
 .davoswidget-multiplechoice li {
     list-style: none;
+    display: flex;
     flex: 1 0 0;
-    flex-basis: 20%;
+    /* flex-basis: 20%; */
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
 }
+
+@media screen and (max-width: 550px) {
+    .davoswidget-options li,
+    .davoswidget-multiplechoice li {
+        padding: 2px;
+    }
+}
+
 .davoswidget-options li > a,
 .davoswidget-multiplechoice li > a {
-    background-color: var(--ox-white);
+    background-color: var(--ox-grey-light);
     color: var(--ox-black);
     border-radius: var(--border-radius);
-    padding: 20px 12px;
+    padding: 18px 20px;
+    width: 100%;
     text-align: center;
     text-decoration: none;
     border: 1px solid var(--ox-black);
-    margin: 10px 0 0;
     height: calc(100% - 40px);
     display: flex;
     align-items: center;
@@ -100,9 +240,9 @@
 .davoswidget-options li > a:hover,
 .davoswidget-multiplechoice li > a.active,
 .davoswidget-multiplechoice li > a:hover {
-    background-color: var(--ox-green);
+    background-color: var(--ox-green-light);
     color: var(--ox-white);
-    border-color: var(--ox-green);
+    border-color: var(--ox-green-light);
 }
 .davoswidget-options a.disabled,
 .davoswidget-multiplechoice a.disabled {
@@ -127,20 +267,21 @@
 /* Submit buttons */
 .davoswidget-submit {
     display: block;
-    background-color: var(--ox-green);
-    color: var(--ox-white);
+    background-color: var(--ox-blue);
+    color: var(--ox-white) !important;
     border-radius: var(--border-radius);
     text-align: center;
     text-decoration: none !important;
-    margin: 15px 0;
-    text-transform:uppercase;
+    margin: 15px auto 0;
+    text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1rem;
     border-style: solid;
-    padding: 20px 20px;
+    padding: 12px 20px;
+    max-width: 50%;
 }
 .davoswidget-submit:hover {
-    background-color: var(--ox-blue);
+    background-color: var(--ox-black);
     color: var(--ox-white);
 }
 

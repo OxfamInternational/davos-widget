@@ -91,14 +91,63 @@ class DavosWidget {
         questionWrapper.setAttribute('class','davoswidget-question davoswidget-question-type-' + questionType);
         questionWrapper.setAttribute('data-davoswidget-questionkey', key);
 
+        const questionContent = document.createElement('div')
+        questionContent.setAttribute('class', 'davoswidget-question-content')
+        questionWrapper.appendChild(questionContent)
+
+        //Setup left title section of card
+        const leftWrapper = document.createElement('div')
+        leftWrapper.setAttribute('class', 'davoswidget-left')
+        questionContent.appendChild(leftWrapper)
+
+        const titleWrapper = document.createElement('div')
+        titleWrapper.setAttribute('class', 'davoswidget-title')
+        leftWrapper.appendChild(titleWrapper)
+
+        // Create title
+        const titleElement = document.createElement('div')
+        titleElement.setAttribute('class', 'davoswidget-title')
+        if (questionData['subtitle']) {
+            titleElement.innerHTML = `<h1>${questionData['title']}</h1><h2>${questionData['subtitle']}</h2>`
+        }
+        else {
+            titleElement.innerHTML = `<h1>${questionData['title']}</h1>`
+        }
+        titleWrapper.appendChild(titleElement)
+
+        const actionsWrapper = document.createElement('div')
+        leftWrapper.appendChild(actionsWrapper)
+
+        // Setup next element.
+        const nextElementWrapper = document.createElement('div');
+        nextElementWrapper.setAttribute('class','davoswidget-next-wrapper');
+        const nextElement = document.createElement('span');
+        nextElementWrapper.appendChild(nextElement);
+        actionsWrapper.appendChild(nextElementWrapper);
+
+        // Setup cta element.
+        const ctaElementWrapper = document.createElement('div');
+        ctaElementWrapper.setAttribute('class','davoswidget-cta-wrapper');
+        const ctaElement = document.createElement('span');
+        // ctaElement.setAttribute('class','davoswidget-cta');
+        ctaElementWrapper.appendChild(ctaElement);
+        actionsWrapper.appendChild(ctaElementWrapper);
+
+        const contentWrapper = document.createElement('div')
+        contentWrapper.setAttribute('class', 'davoswidget-righthand')
+        questionContent.appendChild(contentWrapper)
+
         if (questionType === "options") {
             // Setup the question element
             const questionElement = document.createElement('p');
             questionElement.setAttribute('class','davoswidget-question-text');
             questionElement.innerHTML = questionData.question;
-            questionWrapper.appendChild(questionElement);
+            contentWrapper.appendChild(questionElement);
 
             // Setup the option elements
+            const optionsWrapper = document.createElement('div')
+            contentWrapper.appendChild(optionsWrapper)
+
             var ul=document.createElement('ul');
             ul.setAttribute('class','davoswidget-options');
             let optionsArray = Object.keys(questionData['options']).map((k) => questionData['options'][k]);
@@ -111,14 +160,17 @@ class DavosWidget {
                 li.appendChild(a);
                 ul.appendChild(li);
             });
-            questionWrapper.appendChild(ul);
+            optionsWrapper.appendChild(ul);
         }
         if (questionType === "multiplechoice") {
             // Setup the question element
             const questionElement = document.createElement('p');
             questionElement.setAttribute('class','davoswidget-question-text');
             questionElement.innerHTML = questionData.question + '<p>Please select all that apply</p>';
-            questionWrapper.appendChild(questionElement);
+            contentWrapper.appendChild(questionElement);
+
+            const optionsWrapper = document.createElement('div')
+            contentWrapper.appendChild(optionsWrapper)
 
             // Setup the option elements
             var ul=document.createElement('ul');
@@ -133,29 +185,33 @@ class DavosWidget {
                 li.appendChild(a);
                 ul.appendChild(li);
             });
-            questionWrapper.appendChild(ul);
+            optionsWrapper.appendChild(ul);
 
             const submit = document.createElement('a');
             submit.setAttribute('href','#');
             submit.setAttribute('class', 'davoswidget-submit');
             submit.innerHTML = "Submit";
-            questionWrapper.appendChild(submit);
+            optionsWrapper.appendChild(submit);
         }
         if (questionType === "currency") {
-            var qaWrapper=document.createElement('div');
-            qaWrapper.setAttribute('class', 'flex');
+            var optionsWrapper=document.createElement('div');
+            optionsWrapper.setAttribute('class', '');
 
             // Setup the question element
             const questionElement = document.createElement('p');
-            questionElement.setAttribute('class','davoswidget-question');
+            questionElement.setAttribute('class','davoswidget-question-text');
             questionElement.innerHTML = questionData.question;
-            qaWrapper.appendChild(questionElement);
+            contentWrapper.appendChild(questionElement);
+
+            const currencyElement = document.createElement('div')
+            currencyElement.setAttribute('class', 'davoswidget-currency')
+            optionsWrapper.appendChild(currencyElement)
 
             // Setup the currency label element
             var label=document.createElement('label');
             label.setAttribute('for',widgetID);
             label.innerHTML = 'USD';
-            qaWrapper.appendChild(label);
+            currencyElement.appendChild(label);
 
             // Setup the number elements
             var textfield=document.createElement('input');
@@ -163,35 +219,21 @@ class DavosWidget {
             textfield.setAttribute('placeholder','10');
             textfield.setAttribute('name',widgetID);
             textfield.setAttribute('id',widgetID);
-            qaWrapper.appendChild(textfield);
+            currencyElement.appendChild(textfield);
 
             const submit = document.createElement('a');
             submit.setAttribute('href','#');
             submit.setAttribute('class', 'davoswidget-submit');
             submit.innerHTML = "Submit";
-            questionWrapper.appendChild(qaWrapper);
-            questionWrapper.appendChild(submit);
+            optionsWrapper.appendChild(submit)
+            contentWrapper.appendChild(optionsWrapper);
         }
 
         // Setup response element.
         const responseElement = document.createElement('div');
         responseElement.setAttribute('class','davoswidget-response');
-        questionWrapper.appendChild(responseElement);
-
-        // Setup cta element.
-        const ctaElementWrapper = document.createElement('div');
-        ctaElementWrapper.setAttribute('class','davoswidget-cta-wrapper');
-        const ctaElement = document.createElement('span');
-        // ctaElement.setAttribute('class','davoswidget-cta');
-        ctaElementWrapper.appendChild(ctaElement);
-        questionWrapper.appendChild(ctaElementWrapper);
-
-        // Setup next element.
-        const nextElementWrapper = document.createElement('div');
-        nextElementWrapper.setAttribute('class','davoswidget-next-wrapper');
-        const nextElement = document.createElement('span');
-        nextElementWrapper.appendChild(nextElement);
-        questionWrapper.appendChild(nextElementWrapper);
+        responseElement.hidden = true
+        contentWrapper.appendChild(responseElement);
 
         return questionWrapper;
         
@@ -224,10 +266,16 @@ class DavosWidget {
         const submitLink = document.querySelector('.' + selector + ' .davoswidget-submit');
         if (submitLink) {
             submitLink.addEventListener('click', function optionClicked(event) {
-                let key = this.parentNode.dataset.davoswidgetQuestionkey;
+                let key = this.parentNode.parentNode.parentNode.parentNode.dataset.davoswidgetQuestionkey;
+
+                this.parentNode.hidden = true
+
+
                 if (questionsData[key].hasOwnProperty('response')) {
                     let resultText = questionsData[key].response;
-                    document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-response').innerText = resultText;
+                    let responseElement = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-response')
+                    responseElement.hidden = false
+                    responseElement.innerText = resultText;
                 }
 
                 // CTA
@@ -259,8 +307,8 @@ class DavosWidget {
         multipleChoiceElements.forEach(multipleChoiceElement => {
             multipleChoiceElement.addEventListener('click', function optionClicked(event) {
                 let choice = this.dataset.davoswidgetOption
-                let key = this.parentNode.parentNode.parentNode.dataset.davoswidgetQuestionkey;
-
+                let key = this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.dataset.davoswidgetQuestionkey;
+                
                 // Manage the .active class
                 const clickedButton = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] a[data-davoswidget-option="' + choice + '"]');
 
@@ -279,17 +327,11 @@ class DavosWidget {
         const optionElements = document.querySelectorAll('.' + selector + ' .davoswidget-options > li > a')
         optionElements.forEach(optionElement => {
             optionElement.addEventListener('click', function optionClicked(event) {
-                
-                let choice = this.dataset.davoswidgetOption
-                let key = this.parentNode.parentNode.parentNode.dataset.davoswidgetQuestionkey;
-                let resultText = '';
-                const clickedButton = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] a[data-davoswidget-option="' + choice + '"]');
+                this.parentNode.parentNode.parentNode.hidden = true
 
-                // The options can only be clicked once, this allows disabling and styling.
-                if (clickedButton.classList.contains("disabled")) {
-                    event.preventDefault();
-                    return;
-                }
+                let choice = this.dataset.davoswidgetOption
+                let key = this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.dataset.davoswidgetQuestionkey;
+                let resultText = '';
                 
                 // Specific responses depending on choice
                 if (questionsData[key].hasOwnProperty('responses')) {
@@ -304,15 +346,9 @@ class DavosWidget {
                     resultText = questionsData[key]['answer'] + ' ' + questionsData[key]['response_post'];
                 }
 
-                document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-response').innerText = resultText;
-
-                // Manage the .active class
-                const activeButtons = document.querySelectorAll('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .active');
-                activeButtons.forEach(activeButton => {
-                    activeButton.classList.remove("active");
-                });
-                
-                clickedButton.classList.add("active");
+                let responseElement = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-response')
+                responseElement.innerText = resultText
+                responseElement.hidden = false
 
                 // Is there another question after this one?
                 const arraySize = questionsData.length -1;
@@ -350,14 +386,6 @@ class DavosWidget {
                     }
                 }
 
-                // Add disabled class to options on this widget.
-                const elementClicked = event.target;
-                const clickedSet = elementClicked.parentNode.parentNode.parentNode.dataset.davoswidgetQuestionkey
-                const optionElementsToDisable = document.querySelectorAll('.' + selector + ' .davoswidget-question:nth-child(' + (parseInt(clickedSet)+1) + ') .davoswidget-options > li > a')
-                optionElementsToDisable.forEach(optionElementDisable => {
-                    optionElementDisable.classList.add("disabled");
-                });
-                
                 event.preventDefault();
             });
         });

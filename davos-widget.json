@@ -2,6 +2,8 @@
     "questions": {
         "billionaires": [
             {
+                "title": "Billionaire Quotes",
+                "subtitle": "Who said what?",
                 "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you have to use logic in that sense.",
                 "type": "options",
                 "response_post": "said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
@@ -9,6 +11,8 @@
                 "answer": "Billionaire 2"
             },
             {
+                "title": "Billionaire Quotes",
+                "subtitle": "Who said what?",
                 "question": "I mean the truth is, I've never had it so good in terms of taxes. I am paying the lowest tax rate that I've ever paid in my life.",
                 "type": "options",
                 "response_post": "said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
@@ -16,6 +20,8 @@
                 "answer": "Billionaire 3"
             },
              {
+                "title": "Billionaire Quotes",
+                "subtitle": "Who said what?",
                 "question": "Eventually they run out of other people’s money and then they come for you",
                 "type": "options",
                 "response_post": "said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
@@ -23,6 +29,8 @@
                 "answer": "Billionaire 4"
             },
             {
+                "title": "Billionaire Quotes",
+                "subtitle": "Who said what?",
                 "question": "I want my fair share and that’s all of it!",
                 "type": "options",
                 "response_post": "said this. In today’s dire economy, wealth taxes paid by the super-rich only accounts for X% of all tax revenue while tax paid by everyday people accounts for close to X%! Governments can rectify this inequality by deciding to #TaxTheRich.",
@@ -32,6 +40,7 @@
         ],
         "food": [
             {
+                "title": "Food",
                 "question": "In recent months, how much more are you spending on food?",
                 "type": "currency",
                 "response": "A hard truth to swallow is that as households are increasingly struggling to keep up with food prices, some of the world’s largest food companies increased their profits X%  during this cost of living crisis, we must #TaxTheRich"
@@ -39,6 +48,7 @@
         ],
         "energy": [
             {
+                "title": "Energy",
                 "question": "In recent months, how much more are you spending on energy* (electricity, heat, fuel)?",
                 "type": "currency",
                 "response": "As individuals like yourself pay higher energy prices, X of the largest energy companiesmade $XXbn in windfall profits in 2022. Oxfam’s report has found a growing body of evidence that points to corporate profits and margins as a significant driver of greed-inflation . #FightInequality"
@@ -46,6 +56,7 @@
         ],
         "qol": [
             {
+                "title": "Quality of life/Cost of living",
                 "question": "Due to the rising cost of living, what have you had to sacrifice to survive?",
                 "type": "multiplechoice",
                 "options": ["A meal", "Care services", "Medical care", "Education", "Entertainment", "Other"],
@@ -54,6 +65,7 @@
         ],
         "wages": [
             {
+                "title": "Wages",
                 "question": "Has your wage decreased since the pandemic began?",
                 "type": "options",
                 "options": ["Yes", "No"],
@@ -65,6 +77,7 @@
         ],
         "tax": [
             {
+                "title": "Tax",
                 "question": "In your every day life, when do you pay taxes?",
                 "type": "multiplechoice",
                 "options": ["On my income", "On my property", "Grocery shopping", "Healthcare", "Transportation", "Utility Bills (Phone, Electricity, Water etc.)", "Getting a Divorce", "Inheritance"],
