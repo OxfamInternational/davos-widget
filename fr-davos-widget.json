@@ -3,85 +3,85 @@
         "billionaires": [
             {
                 "title": "CITATIONS DES MILLIARDAIRES",
-                "subtitle": "Pourrez-vous deviner quel·le milliardaire a fait les déclarations suivantes ?",
+                "subtitle": "Pourrez-vous deviner quel·le milliardaire a fait les déclarations suivantes?",
                 "question": "C'est logique, non ? Ceux qui ont plus paient plus. C’est une question de logique.",
                 "type": "options",
-                "response_post": "said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
-                "options": ["Tom Cruise", "Penelope Cruz", "Rosalía", "Adam Sandler"],
-                "answer": "Penelope Cruz"
+                "response_post": "a dit ceci. Dans le contexte économique catastrophique actuel, les impôts sur la fortune payés par les ultrariches ne représentent que 4 % des recettes fiscales, alors que ceux des citoyen·nes ordinaires représentent 80 % ! Les gouvernements peuvent corriger ces inégalités, pour cela #TaxonsLesRiches.",
+                "options": ["Tom Cruise", "Penélope Cruz", "Rosalía", "Adam Sandler"],
+                "answer": "Penélope Cruz"
             },
             {
-                "title": "Billionaire Quotes",
-                "subtitle": "Who said what?",
-                "question": "I mean the truth is, I've never had it so good in terms of taxes. I am paying the lowest tax rate that I've ever paid in my life.",
+                "title": "CITATIONS DES MILLIARDAIRES",
+                "subtitle": "Pourrez-vous deviner quel·le milliardaire a fait les déclarations suivantes?",
+                "question": "En matière d’impôts, je n’ai jamais connu meilleure situation. Je n’en ai jamais payé aussi peu.",
                 "type": "options",
-                "response_post": "said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
-                "options": ["Billionaire 1", "Billionaire 2", "Billionaire 3", "Billionaire 4"],
-                "answer": "Billionaire 3"
+                "response_post": "a dit ceci. Dans le contexte économique catastrophique actuel, les impôts sur la fortune payés par les ultrariches ne représentent que 4 % des recettes fiscales, alors que ceux des citoyen·nes ordinaires représentent 80 % ! Les gouvernements peuvent corriger ces inégalités, pour cela #TaxonsLesRiches.",
+                "options": ["Bernard Arnault", "Warren Buffet", "Mark Zuckerberg", "James Cargill"],
+                "answer": "Warren Buffett"
             },
              {
-                "title": "Billionaire Quotes",
-                "subtitle": "Who said what?",
-                "question": "Eventually they run out of other people’s money and then they come for you",
+                "title": "CITATIONS DES MILLIARDAIRES",
+                "subtitle": "Pourrez-vous deviner quel·le milliardaire a fait les déclarations suivantes?",
+                "question": "L’argent des autres finit par manquer et c’est là qu’on vient vous chercher.",
                 "type": "options",
-                "response_post": "said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
-                "options": ["Billionaire 1", "Billionaire 2", "Billionaire 3", "Billionaire 4"],
-                "answer": "Billionaire 4"
+                "response_post": "a dit ceci. Dans le contexte économique catastrophique actuel, les impôts sur la fortune payés par les ultrariches ne représentent que 4 % des recettes fiscales, alors que ceux des citoyen·nes ordinaires représentent 80 % ! Les gouvernements peuvent corriger ces inégalités, pour cela #TaxonsLesRiches.",
+                "options": ["Kylie Jenner", "Bill Gates", "Sergey Brin", "Elon Musk"],
+                "answer": "Elon Musk"
             },
             {
-                "title": "Billionaire Quotes",
-                "subtitle": "Who said what?",
-                "question": "I want my fair share and that’s all of it!",
+                "title": "CITATIONS DES MILLIARDAIRES",
+                "subtitle": "Pourrez-vous deviner quel·le milliardaire a fait les déclarations suivantes?",
+                "question": "Elle (Elizabeth Warren) essaie de diaboliser les riches parce qu’il y a plus de personnes pauvres que de riches.",
                 "type": "options",
-                "response_post": "said this. In today’s dire economy, wealth taxes paid by the super-rich only accounts for X% of all tax revenue while tax paid by everyday people accounts for close to X%! Governments can rectify this inequality by deciding to #TaxTheRich.",
-                "options": ["Billionaire 1", "Billionaire 2", "Billionaire 3", "Billionaire 4"],
-                "answer": "Billionaire 3"
+                "response_post": "a dit ceci. Dans le contexte économique catastrophique actuel, les impôts sur la fortune payés par les ultrariches ne représentent que 4 % des recettes fiscales, alors que ceux des citoyen·nes ordinaires représentent 80 % ! Les gouvernements peuvent corriger ces inégalités, pour cela #TaxonsLesRiches.",
+                "options": ["Leon Cooperman", "Donald Trump", "Bill Marriott", "Alice Walton"],
+                "answer": "Leon Cooperman"
             }
         ],
         "food": [
             {
-                "title": "Food",
-                "question": "In recent months, how much more are you spending on food?",
+                "title": "ALIMENTATION",
+                "question": "Ces derniers mois, de combien vos dépenses en nourriture ont-elles augmenté ?",
                 "type": "currency",
-                "response": "A hard truth to swallow is that as households are increasingly struggling to keep up with food prices, some of the world’s largest food companies increased their profits X%  during this cost of living crisis, we must #TaxTheRich"
+                "response": "Le fait que les ménages peinent de plus en plus à faire face à la hausse des prix alimentaires alors que certaines des plus grandes entreprises alimentaires et énergétiques mondiales ont vu leurs profits augmenter de 256 % en 2022 durant la crise du coût de la vie est une vérité dure à avaler. Nous devons mettre fin à la #LoiDuPlusRiche"
             }
         ],
         "energy": [
             {
-                "title": "Energy",
-                "question": "In recent months, how much more are you spending on energy* (electricity, heat, fuel)?",
+                "title": "ÉNERGIE",
+                "question": "Ces derniers mois, de combien vos dépenses énergétiques* ont-elles augmenté ? (Électricité, chauffage, carburant)?",
                 "type": "currency",
-                "response": "As individuals like yourself pay higher energy prices, X of the largest energy companiesmade $XXbn in windfall profits in 2022. Oxfam’s report has found a growing body of evidence that points to corporate profits and margins as a significant driver of greed-inflation . #FightInequality"
+                "response": "Alors que des personnes comme vous paient des prix plus élevés à la pompe et dans les services publics des entreprises alimentaires et énergétiques ont engrangé 306 milliards de dollars de profits exceptionnels en 2022. Dans son rapport, Oxfam a réuni un ensemble de preuves de plus en plus important qui indique que les profits et les marges des entreprises ont considérablement contribué à l’inflation due à la cupidité. #CombattonsLesInégalités"
             }
         ],
         "qol": [
             {
-                "title": "Quality of life/Cost of living",
-                "question": "Due to the rising cost of living, what have you had to sacrifice to survive?",
+                "title": "QUALITÉ DE VIE/COÛT DE LA VIE",
+                "question": "Avec la hausse du coût de la vie, à quoi avez-vous dû renoncer pour survivre ?",
                 "type": "multiplechoice",
-                "options": ["A meal", "Care services", "Medical care", "Education", "Entertainment", "Other"],
-                "response": "It comes as no surprise that Billionaires have sacrificed nothing. Since 2020 their wealth has increased by $X Bn a day. While the cost of food expected to increase by X% in 2022, luxury goods such as yachts, champagne & thoroughbreds have only increased by X% #TaxTheRich"
+                "options": ["Un repas", "Des soins de santé pour une proche (garde d’enfants, services de nourrice à domicile, etc.)", "Soins médicaux", "Douches chaudes / études", "Divertissement / loisirs", "Autre"],
+                "response": "Vous ne serez pas surprise d’apprendre que les milliardaires n’ont renoncé à rien. Depuis 2020, leur fortune augmente de 2,7 milliards par jour. Alors que les prix alimentaires devraient augmenter de 18 % en 2022, ceux des produits de luxe comme les yachts, le champagne et les chevaux pur-sang n’ont augmenté que de 7 % #TaxonsLesRiches"
             }
         ],
         "wages": [
             {
-                "title": "Wages",
-                "question": "Has your wage decreased since the pandemic began?",
+                "title": "SALAIRES",
+                "question": "Votre salaire a-t-il diminué depuis le début de la pandémie ?",
                 "type": "options",
-                "options": ["Yes", "No"],
+                "options": ["Oui", "Non"],
                 "responses": {
-                    "Yes": "You are well within the majority of humanity that has experienced a decrease in income or loss of employment since the pandemic billionaire wealth has increase by  $Xbn a day since 2020. We must fight inequality by demanding #TaxTheRich",
-                    "No": "At least X billion people live in countries where inflation is outpacing wage growth, thus you’re inadvertently experiencing a real-terms pay cut which will in turn drive-up inequality and poverty. #FightInequality"   
+                    "Yes": "Vous faites partie de la majeure partie de l’humanité qui a perdu des revenus ou des emplois tandis que depuis 2020, les 1 % les plus riches ont accaparé deux fois plus de richesses que le reste de l'humanité. Nous devons combattre les inégalités et mettre fin à la #LoiDuPlusFort",
+                    "No": "Au moins 1,7 milliard de personnes vivent dans des pays où les salaires ne suivent pas le rythme de l’inflation, ce qui entraîne une diminution des salaires réels qui aggravera les inégalités et la pauvreté. #CombattonsLesInégalités"   
                 }
             }
         ],
         "tax": [
             {
-                "title": "Tax",
-                "question": "In your every day life, when do you pay taxes?",
+                "title": "FISCALITÉ",
+                "question": "Dans votre vie quotidienne, sur quoi êtes-vous imposée ?",
                 "type": "multiplechoice",
-                "options": ["On my income", "On my property", "Grocery shopping", "Healthcare", "Transportation", "Utility Bills (Phone, Electricity, Water etc.)", "Getting a Divorce", "Inheritance"],
-                "response": "Billionaires continue to stealthily avoid taxes by investing in assets that accrue value and increase their overall wealth without being subject to taxation, not to mention the easy access to tax havens globally. A #WealthTax is long overdue to #fightinequality"
+                "options": ["Sur mon revenu", "Sur ma propriété", "Courses alimentaires", "Soins de santé", "Transport", "Factures (téléphone, électricité, eau, etc.)", "Frais de divorce", "Héritage"] ,
+                "response": "Les milliardaires continent à éviter discrètement le paiement des impôts en investissant dans des actifs non imposables qui augmentent la valeur de leur patrimoine et leur fortune globale. En outre, n’oublions pas qu’ils ont accès très facilement aux paradis fiscaux mondiaux. Cela fait longtemps que nous attendons un #ImpôtSurLaFortune pour #LutterContreLesInégalités"
             }
         ]
     }
