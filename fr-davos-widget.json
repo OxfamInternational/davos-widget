@@ -70,8 +70,8 @@
                 "type": "options",
                 "options": ["Oui", "Non"],
                 "responses": {
-                    "Yes": "Vous faites partie de la majeure partie de l’humanité qui a perdu des revenus ou des emplois tandis que depuis 2020, les 1 % les plus riches ont accaparé deux fois plus de richesses que le reste de l'humanité. Nous devons combattre les inégalités et mettre fin à la #LoiDuPlusFort",
-                    "No": "Au moins 1,7 milliard de personnes vivent dans des pays où les salaires ne suivent pas le rythme de l’inflation, ce qui entraîne une diminution des salaires réels qui aggravera les inégalités et la pauvreté. #CombattonsLesInégalités"   
+                    "Oui": "Vous faites partie de la majeure partie de l’humanité qui a perdu des revenus ou des emplois tandis que depuis 2020, les 1 % les plus riches ont accaparé deux fois plus de richesses que le reste de l'humanité. Nous devons combattre les inégalités et mettre fin à la #LoiDuPlusFort",
+                    "Non": "Au moins 1,7 milliard de personnes vivent dans des pays où les salaires ne suivent pas le rythme de l’inflation, ce qui entraîne une diminution des salaires réels qui aggravera les inégalités et la pauvreté. #CombattonsLesInégalités"   
                 }
             }
         ],
