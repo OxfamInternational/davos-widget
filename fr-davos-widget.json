@@ -2,13 +2,13 @@
     "questions": {
         "billionaires": [
             {
-                "title": "Billionaire Quotes",
-                "subtitle": "Who said what?",
-                "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you have to use logic in that sense.",
+                "title": "CITATIONS DES MILLIARDAIRES",
+                "subtitle": "Pourrez-vous deviner quel·le milliardaire a fait les déclarations suivantes ?",
+                "question": "C'est logique, non ? Ceux qui ont plus paient plus. C’est une question de logique.",
                 "type": "options",
                 "response_post": "said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
-                "options": ["Billionaire 1", "Billionaire 2", "Billionaire 3", "Billionaire 4"],
-                "answer": "Billionaire 2"
+                "options": ["Tom Cruise", "Penelope Cruz", "Rosalía", "Adam Sandler"],
+                "answer": "Penelope Cruz"
             },
             {
                 "title": "Billionaire Quotes",

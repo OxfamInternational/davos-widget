@@ -1,0 +1,88 @@
+{
+    "questions": {
+        "billionaires": [
+            {
+                "title": "BILLIONAIRE QUOTES",
+                "subtitle": "Can you guess correctly which billionaire said what below?",
+                "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you must use logic in that sense.",
+                "type": "options",
+                "response_post": "said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
+                "options": ["Tom Cruise", "Penelope Cruz", "Rosalía", "Adam Sandler"],
+                "answer": "Penelope Cruz"
+            },
+            {
+                "title": "Billionaire Quotes",
+                "subtitle": "Who said what?",
+                "question": "I mean the truth is, I've never had it so good in terms of taxes. I am paying the lowest tax rate that I've ever paid in my life.",
+                "type": "options",
+                "response_post": "said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
+                "options": ["Billionaire 1", "Billionaire 2", "Billionaire 3", "Billionaire 4"],
+                "answer": "Billionaire 3"
+            },
+            {
+                "title": "Billionaire Quotes",
+                "subtitle": "Who said what?",
+                "question": "Eventually they run out of other people’s money and then they come for you",
+                "type": "options",
+                "response_post": "said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
+                "options": ["Billionaire 1", "Billionaire 2", "Billionaire 3", "Billionaire 4"],
+                "answer": "Billionaire 4"
+            },
+            {
+                "title": "Billionaire Quotes",
+                "subtitle": "Who said what?",
+                "question": "I want my fair share and that’s all of it!",
+                "type": "options",
+                "response_post": "said this. In today’s dire economy, wealth taxes paid by the super-rich only accounts for X% of all tax revenue while tax paid by everyday people accounts for close to X%! Governments can rectify this inequality by deciding to #TaxTheRich.",
+                "options": ["Billionaire 1", "Billionaire 2", "Billionaire 3", "Billionaire 4"],
+                "answer": "Billionaire 3"
+            }
+        ],
+        "food": [
+            {
+                "title": "Food",
+                "question": "In recent months, how much more are you spending on food?",
+                "type": "currency",
+                "response": "A hard truth to swallow is that as households are increasingly struggling to keep up with food prices, some of the world’s largest food companies increased their profits X%  during this cost of living crisis, we must #TaxTheRich"
+            }
+        ],
+        "energy": [
+            {
+                "title": "Energy",
+                "question": "In recent months, how much more are you spending on energy* (electricity, heat, fuel)?",
+                "type": "currency",
+                "response": "As individuals like yourself pay higher energy prices, X of the largest energy companiesmade $XXbn in windfall profits in 2022. Oxfam’s report has found a growing body of evidence that points to corporate profits and margins as a significant driver of greed-inflation . #FightInequality"
+            }
+        ],
+        "qol": [
+            {
+                "title": "Quality of life/Cost of living",
+                "question": "Due to the rising cost of living, what have you had to sacrifice to survive?",
+                "type": "multiplechoice",
+                "options": ["A meal", "Care services", "Medical care", "Education", "Entertainment", "Other"],
+                "response": "It comes as no surprise that Billionaires have sacrificed nothing. Since 2020 their wealth has increased by $X Bn a day. While the cost of food expected to increase by X% in 2022, luxury goods such as yachts, champagne & thoroughbreds have only increased by X% #TaxTheRich"
+            }
+        ],
+        "wages": [
+            {
+                "title": "Wages",
+                "question": "Has your wage decreased since the pandemic began?",
+                "type": "options",
+                "options": ["Yes", "No"],
+                "responses": {
+                    "Yes": "You are well within the majority of humanity that has experienced a decrease in income or loss of employment since the pandemic billionaire wealth has increase by  $Xbn a day since 2020. We must fight inequality by demanding #TaxTheRich",
+                    "No": "At least X billion people live in countries where inflation is outpacing wage growth, thus you’re inadvertently experiencing a real-terms pay cut which will in turn drive-up inequality and poverty. #FightInequality"   
+                }
+            }
+        ],
+        "tax": [
+            {
+                "title": "Tax",
+                "question": "In your every day life, when do you pay taxes?",
+                "type": "multiplechoice",
+                "options": ["On my income", "On my property", "Grocery shopping", "Healthcare", "Transportation", "Utility Bills (Phone, Electricity, Water etc.)", "Getting a Divorce", "Inheritance"],
+                "response": "Billionaires continue to stealthily avoid taxes by investing in assets that accrue value and increase their overall wealth without being subject to taxation, not to mention the easy access to tax havens globally. A #WealthTax is long overdue to #fightinequality"
+            }
+        ]
+    }
+}

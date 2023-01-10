@@ -33,9 +33,24 @@ function buildCta(ctaData) {
 class DavosWidget {
 
     // Setup some base variables
-    constructor(ctaJsonPath, coreJsonPath) {
-        this.jsonPath = coreJsonPath;
-        this.ctaJsonPath = ctaJsonPath;
+    constructor(thePath) {
+        // Check whether we need (and have translated versions of these files)
+        const enabledTranslations = ['fr', 'es'];
+        const requestedLanguage = window.location.pathname.split('/')[1];
+        console.log(requestedLanguage);
+        if (enabledTranslations.includes(requestedLanguage)) {
+            console.log("supported language");
+            var appLanguage = requestedLanguage;
+        }
+        else {
+            console.log("unsupported language");
+            var appLanguage = 'en';
+        }
+
+        // const davosWidget = new DavosWidget('../../davos-widget-cta.json', '../../davos-widget.json');
+
+        this.jsonPath = thePath + appLanguage + '-davos-widget.json';
+        this.ctaJsonPath = thePath + appLanguage + '-davos-widget-cta.json';
         this.htmlWrapperStr = 
         `<div class="davoswidget-questions"></div>`;
     }
@@ -43,7 +58,7 @@ class DavosWidget {
     // Get the questionData from our local json file.
     async getQuestionData(path, path2) {
         const fetchReq1 = fetch(path).then((res) => res.json());
-        const fetchReq2 = fetch(path2).then((res) => res.json());
+        const fetchReq2 = fetch(path2).then((res) => res.json());       
 
         const allData = Promise.all([fetchReq1, fetchReq2]);
 
@@ -71,6 +86,7 @@ class DavosWidget {
         const ctaData = this.ctaJson;
 
         // Setup the individual widget with listeners
+        
         const targetItems = document.querySelectorAll('.davoswidget');
         
         targetItems.forEach(targetItem => {

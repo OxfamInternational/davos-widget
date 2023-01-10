@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Davos Widget Prototype</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="davos-widget.css">
+        <link rel="stylesheet" href="../davos-widget.css">
         
     </head>
     <body>
@@ -12,8 +12,8 @@
         <h1>This is a page</h1>
         <p>Some page copy.</p>
         <ul>
-            <li>Language unknown (should fallback to english</li>
-            <li><a href="/fr/">French</a></li>
+            <li>Language unknown (should fallback to english)</li>
+            <li><a href="/fr/">French</a> and a <a href="/fr/deeper/">Deeper French page</a></li>
             <li><a href="/es/">Spanish</a></li>
             <li><a href="/en/">English</a></li>
             <li><a href="/ar/">Arabic (should fallback to english)</a></li>
@@ -44,9 +44,9 @@
         <span class="davoswidget" data-widget="tax"></span>
 
         <!-- The js must go at bottom of the page so it can access the DOM -->
-        <script src="davos-widget.js"></script>
+        <script src="../davos-widget.js"></script>
         <script>
-          const davosWidget = new DavosWidget('');
+          const davosWidget = new DavosWidget('../');
           davosWidget.setup();
         </script>
 
