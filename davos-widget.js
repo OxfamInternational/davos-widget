@@ -37,17 +37,12 @@ class DavosWidget {
         // Check whether we need (and have translated versions of these files)
         const enabledTranslations = ['fr', 'es'];
         const requestedLanguage = window.location.pathname.split('/')[1];
-        console.log(requestedLanguage);
         if (enabledTranslations.includes(requestedLanguage)) {
-            console.log("supported language");
             var appLanguage = requestedLanguage;
         }
         else {
-            console.log("unsupported language");
             var appLanguage = 'en';
         }
-
-        // const davosWidget = new DavosWidget('../../davos-widget-cta.json', '../../davos-widget.json');
 
         this.jsonPath = thePath + appLanguage + '-davos-widget.json';
         this.ctaJsonPath = thePath + appLanguage + '-davos-widget-cta.json';
