@@ -5,35 +5,35 @@
                 "cta": {
                     "type": "url",
                     "url": "https://twitter.com/intent/tweet?text=In%20today%27s%20dire%20economy%2C%20the%20wealthy%20only%20account%20for%204%25%20of%20the%20tax%20revenue%20while%20individuals%20account%20for%20close%20to%2080%25%2C%20governments%20can%20rectify%20this%20inequality%20by%20%23TaxTheRich%20policies.",
-                    "linktext": "Tweet #TaxTheRich"
+                    "linktext": "#TaxonsLesRiches"
                 }
             },
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/take-action/join-global-movement-change",
-                    "linktext": "Join the Movement"
+                    "url": "https://www.oxfam.org/en/take-action/join-global-movement-change",
+                    "linktext": "Joignez-vous à nous"
                 }
             },
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/donate/global-emergency-fund",
-                    "linktext": "Donate"
+                    "url": "https://www.oxfam.org/en/donate/Davos-donation",
+                    "linktext": "Faire un don"
                 }
             },
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/take-action/join-global-movement-change",
-                    "linktext": "Join the Movement"
+                    "url": "https://www.oxfam.org/en/take-action/join-global-movement-change",
+                    "linktext": "Joignez-vous à nous"
                 }
             },
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/donate/global-emergency-fund",
-                    "linktext": "Donate"
+                    "url": "https://www.oxfam.org/en/donate/Davos-donation",
+                    "linktext": "Faire un don"
                 }
             }
         ],
@@ -42,7 +42,7 @@
                 "cta": {
                     "type": "url",
                     "url": "https://twitter.com/intent/tweet?text=In%20today%27s%20dire%20economy%2C%20the%20wealthy%20only%20account%20for%204%25%20of%20the%20tax%20revenue%20while%20individuals%20account%20for%20close%20to%2080%25%2C%20governments%20can%20rectify%20this%20inequality%20by%20%23TaxTheRich%20policies.",
-                    "linktext": "Tweet #TaxTheRich"
+                    "linktext": "#TaxonsLesRiches"
                 }
             }
         ],
@@ -50,8 +50,8 @@
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/take-action/join-global-movement-change",
-                    "linktext": "Join the Movement"
+                    "url": "https://www.oxfam.org/en/take-action/join-global-movement-change",
+                    "linktext": "Joignez-vous à nous"
                 }
             }
         ],
@@ -59,8 +59,8 @@
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/donate/global-emergency-fund",
-                    "linktext": "Donate"
+                    "url": "https://www.oxfam.org/en/donate/Davos-donation",
+                    "linktext": "Faire un don"
                 }
             }
         ],
@@ -68,8 +68,8 @@
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/donate/global-emergency-fund",
-                    "linktext": "Donate"
+                    "url": "https://www.oxfam.org/en/donate/Davos-donation",
+                    "linktext": "Faire un don"
                 }
             }
         ],
@@ -77,8 +77,8 @@
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/donate/global-emergency-fund",
-                    "linktext": "Donate"
+                    "url": "https://www.oxfam.org/en/donate/Davos-donation",
+                    "linktext": "Faire un don"
                 }
             }
         ]

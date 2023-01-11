@@ -11,28 +11,28 @@
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/take-action/join-global-movement-change",
-                    "linktext": "Join the Movement"
+                    "url": "https://www.oxfam.org/en/take-action/join-global-movement-change",
+                    "linktext": "Join Our Movement"
                 }
             },
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/donate/global-emergency-fund",
+                    "url": "https://www.oxfam.org/en/donate/Davos-donation",
                     "linktext": "Donate"
                 }
             },
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/take-action/join-global-movement-change",
-                    "linktext": "Join the Movement"
+                    "url": "https://www.oxfam.org/en/take-action/join-global-movement-change",
+                    "linktext": "Join Our Movement"
                 }
             },
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/donate/global-emergency-fund",
+                    "url": "https://www.oxfam.org/en/donate/Davos-donation",
                     "linktext": "Donate"
                 }
             }
@@ -50,8 +50,8 @@
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/take-action/join-global-movement-change",
-                    "linktext": "Join the Movement"
+                    "url": "https://www.oxfam.org/en/take-action/join-global-movement-change",
+                    "linktext": "Join Our Movement"
                 }
             }
         ],
@@ -59,7 +59,7 @@
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/donate/global-emergency-fund",
+                    "url": "https://www.oxfam.org/en/donate/Davos-donation",
                     "linktext": "Donate"
                 }
             }
@@ -68,7 +68,7 @@
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/donate/global-emergency-fund",
+                    "url": "https://www.oxfam.org/en/donate/Davos-donation",
                     "linktext": "Donate"
                 }
             }
@@ -77,7 +77,7 @@
             {
                 "cta": {
                     "type": "url",
-                    "url": "https://www-d8-dev.oxinfra.org/en/donate/global-emergency-fund",
+                    "url": "https://www.oxfam.org/en/donate/Davos-donation",
                     "linktext": "Donate"
                 }
             }
