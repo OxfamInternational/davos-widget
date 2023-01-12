@@ -41,6 +41,7 @@
         "food": [
             {
                 "title": "ALIMENTATION",
+                "subtitle": "placeholder",
                 "question": "Ces derniers mois, de combien vos dépenses en nourriture ont-elles augmenté ?",
                 "type": "currency",
                 "response": "Le fait que les ménages peinent de plus en plus à faire face à la hausse des prix alimentaires alors que certaines des plus grandes entreprises alimentaires et énergétiques mondiales ont vu leurs profits augmenter de 256 % en 2022 durant la crise du coût de la vie est une vérité dure à avaler. Nous devons mettre fin à la #LoiDuPlusRiche"
@@ -49,6 +50,7 @@
         "energy": [
             {
                 "title": "ÉNERGIE",
+                "subtitle": "placeholder",
                 "question": "Ces derniers mois, de combien vos dépenses énergétiques* ont-elles augmenté ? (Électricité, chauffage, carburant)?",
                 "type": "currency",
                 "response": "Alors que des personnes comme vous paient des prix plus élevés à la pompe et dans les services publics des entreprises alimentaires et énergétiques ont engrangé 306 milliards de dollars de profits exceptionnels en 2022. Dans son rapport, Oxfam a réuni un ensemble de preuves de plus en plus important qui indique que les profits et les marges des entreprises ont considérablement contribué à l’inflation due à la cupidité. #CombattonsLesInégalités"
@@ -57,15 +59,17 @@
         "qol": [
             {
                 "title": "QUALITÉ DE VIE/COÛT DE LA VIE",
+                "subtitle": "placeholder",
                 "question": "Avec la hausse du coût de la vie, à quoi avez-vous dû renoncer pour survivre ?",
                 "type": "multiplechoice",
-                "options": ["Un repas", "Des soins de santé pour une proche (garde d’enfants, services de nourrice à domicile, etc.)", "Soins médicaux", "Douches chaudes / études", "Divertissement / loisirs", "Autre"],
+                "options": ["Un repas", "Des soins de santé", "Soins médicaux", "Douches chaudes / études", "Divertissement / loisirs", "Autre"],
                 "response": "Vous ne serez pas surprise d’apprendre que les milliardaires n’ont renoncé à rien. Depuis 2020, leur fortune augmente de 2,7 milliards par jour. Alors que les prix alimentaires devraient augmenter de 18 % en 2022, ceux des produits de luxe comme les yachts, le champagne et les chevaux pur-sang n’ont augmenté que de 7 % #TaxonsLesRiches"
             }
         ],
         "wages": [
             {
                 "title": "SALAIRES",
+                "subtitle": "placeholder",
                 "question": "Votre salaire a-t-il diminué depuis le début de la pandémie ?",
                 "type": "options",
                 "options": ["Oui", "Non"],
@@ -78,9 +82,10 @@
         "tax": [
             {
                 "title": "FISCALITÉ",
+                "subtitle": "placeholder",
                 "question": "Dans votre vie quotidienne, sur quoi êtes-vous imposée ?",
                 "type": "multiplechoice",
-                "options": ["Sur mon revenu", "Sur ma propriété", "Courses alimentaires", "Soins de santé", "Transport", "Factures (téléphone, électricité, eau, etc.)", "Frais de divorce", "Héritage"],
+                "options": ["Sur mon revenu", "Sur ma propriété", "Courses alimentaires", "Soins de santé", "Transport", "Factures", "Frais de divorce", "Héritage"],
                 "response": "Les milliardaires continent à éviter discrètement le paiement des impôts en investissant dans des actifs non imposables qui augmentent la valeur de leur patrimoine et leur fortune globale. En outre, n’oublions pas qu’ils ont accès très facilement aux paradis fiscaux mondiaux. Cela fait longtemps que nous attendons un #ImpôtSurLaFortune pour #LutterContreLesInégalités"
             }
         ]
