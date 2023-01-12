@@ -3,7 +3,7 @@
         "billionaires": [
             {
                 "title": "BILLIONAIRE QUOTES",
-                "subtitle": "Can you guess which billionaire said what?",
+                "subtitle": "Who said what?",
                 "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you must use logic in that sense.",
                 "type": "options",
                 "response_post": "said this. In today’s dire economy, wealth taxes paid by the super-rich only accounts for 4% of all tax revenue while tax paid by everyday people accounts for close to 80%! Governments can rectify this inequality by deciding to #TaxTheRich.",
@@ -12,7 +12,7 @@
             },
             {
                 "title": "Billionaire Quotes",
-                "subtitle": "Can you guess which billionaire said what?",
+                "subtitle": "Who said what?",
                 "question": "I mean the truth is, I've never had it so good in terms of taxes. I am paying the lowest tax rate that I've ever paid in my life.",
                 "type": "options",
                 "response_post": "said this. In today’s dire economy, wealth taxes paid by the super-rich only accounts for 4% of all tax revenue while tax paid by everyday people accounts for close to 80%! Governments can rectify this inequality by deciding to #TaxTheRich.",
@@ -21,7 +21,7 @@
             },
             {
                 "title": "Billionaire Quotes",
-                "subtitle": "Can you guess which billionaire said what?",
+                "subtitle": "Who said what?",
                 "question": "Eventually they run out of other people’s money and then they come for you",
                 "type": "options",
                 "response_post": "said this. In today’s dire economy, wealth taxes paid by the super-rich only accounts for 4% of all tax revenue while tax paid by everyday people accounts for close to 80%! Governments can rectify this inequality by deciding to #TaxTheRich.",
@@ -30,7 +30,7 @@
             },
             {
                 "title": "Billionaire Quotes",
-                "subtitle": "Can you guess which billionaire said what?",
+                "subtitle": "Who said what?",
                 "question": "She (Elizabeth Warren) is trying to demonize wealthy people because there are more poor people than wealthy people.",
                 "type": "options",
                 "response_post": "said this. In today’s dire economy, wealth taxes paid by the super-rich only accounts for 4% of all tax revenue while tax paid by everyday people accounts for close to 80%! Governments can rectify this inequality by deciding to #TaxTheRich.",
@@ -41,7 +41,7 @@
         "food": [
             {
                 "title": "Food",
-                "subtitle": "Is your food basket shrinking?",
+                "subtitle": "Skipping Meals?",
                 "question": "In recent months, how much more are you spending on food?",
                 "type": "currency",
                 "response": "A hard truth to swallow is that as households are increasingly struggling to keep up with food prices, some of the world’s largest food and energy companies increased their profits by 256% in 2022 during the cost-of-living crisis, we must #SurvivalOfTheRichest"
@@ -50,7 +50,7 @@
         "energy": [
             {
                 "title": "Energy",
-                "subtitle": "Are your utility bills skyrocketing?",
+                "subtitle": "Taking Cold Showers?",
                 "question": "In recent months, how much more are you spending on energy* (electricity, heat, fuel)?",
                 "type": "currency",
                 "response": "As individuals like yourself pay higher pump & utility prices, food and energy companies have made $ 306 billion in windfall profits in 2022. Oxfam’s report has found a growing body of evidence that points to corporate profits and margins as a significant driver of greed-inflation. #FightInequality"
@@ -59,7 +59,7 @@
         "qol": [
             {
                 "title": "Quality of life",
-                "subtitle": "What simple luxuries have you given up?",
+                "subtitle": "Are you penny pinching?",
                 "question": "Due to the rising cost of living, what have you had to sacrifice to survive?",
                 "type": "multiplechoice",
                 "options": ["A meal", "Care services", "Medical care", "Hot showers", "Entertainment", "Education"],
@@ -69,7 +69,7 @@
         "wages": [
             {
                 "title": "Wages",
-                "subtitle": "Can you afford a decent life?",
+                "subtitle": "Earning a liveable wage?",
                 "question": "Has your wage decreased since the pandemic began?",
                 "type": "options",
                 "options": ["Yes", "No"],
@@ -82,7 +82,7 @@
         "tax": [
             {
                 "title": "Tax",
-                "subtitle": "Who pays more taxes, you or billionaires?",
+                "subtitle": "Abolish billionaires today!",
                 "question": "In your every day life, when do you pay taxes?",
                 "type": "multiplechoice",
                 "options": ["On my income", "On my property", "Grocery shopping", "Healthcare", "Transportation", "Utility Bills", "Getting a Divorce", "Inheritance"],
