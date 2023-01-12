@@ -62,7 +62,7 @@
                 "subtitle": "",
                 "question": "¿Qué has tenido que sacrificar para hacer frente al aumento de los precios?",
                 "type": "multiplechoice",
-                "options": ["Comida", "Cuidados de un ser querido", "Atención médica", "Agua caliente / Educación", "Ocio", "Otros"],
+                "options": ["Comida", "Cuidados de un ser querido", "Atención médica", "Agua caliente", "Ocio", "Educación"],
                 "response": "Obviamente, los milmillonarios no han sacrificado nada. Desde 2020 su riqueza ha aumentado 2700 millones de dólares al día. Está previsto que el coste de los alimentos aumente un 18 % en 2022, mientras que los artículos de lujo como los yates, el champán y los caballos de pura sangre solo han aumentado un 7 % #ImpuestoALaRiqueza"
             }
         ],
