@@ -59,7 +59,7 @@
         "qol": [
             {
                 "title": "Quality of life",
-                "subtitle": "What simple luxuries have you given up?"
+                "subtitle": "What simple luxuries have you given up?",
                 "question": "Due to the rising cost of living, what have you had to sacrifice to survive?",
                 "type": "multiplechoice",
                 "options": ["A meal", "Care services", "Medical care", "Hot showers", "Entertainment", "Education"],
