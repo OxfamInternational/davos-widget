@@ -41,6 +41,7 @@
         "food": [
             {
                 "title": "COMIDA",
+                "subtitle": "placeholder",
                 "question": "¿Cuánto más pagas por la compra últimamente?",
                 "type": "currency",
                 "response": "La dura realidad es que muchos hogares tienen cada vez más dificultades para hacer frente a los precios de los alimentos, mientras que algunas de las mayores empresas energéticas y de alimentación del mundo han aumentado sus beneficios en un 256 % durante esta crisis del coste de la vida. Acabemos con #LaLeyDelMásRico"
@@ -49,6 +50,7 @@
         "energy": [
             {
                 "title": "ENERGÍA",
+                "subtitle": "placeholder",
                 "question": "In recent months, how much more are you spending on energy* (electricity, heat, fuel)?",
                 "type": "currency",
                 "response": "Mientras personas como tú pagan más por el combustible y las facturas, las empresas energéticas y de alimentación han amasado 306 000 millones de dólares en beneficios extraordinarios en 2022. El informe de Oxfam presenta una creciente cantidad de datos que señalan a los beneficios y márgenes empresariales como uno de los principales motores de la inflación generada por la avaricia. #LuchemosContraLaDesigualdad"
@@ -57,6 +59,7 @@
         "qol": [
             {
                 "title": "CALIDAD Y COSTE DE LA VIDA",
+                "subtitle": "placeholder",
                 "question": "¿Qué has tenido que sacrificar para hacer frente al aumento de los precios?",
                 "type": "multiplechoice",
                 "options": ["Comida", "Cuidados de un ser querido (servicios de cuidado infantil fuera o dentro del hogar, etc.)", "Atención médica", "Agua caliente / Educación", "Ocio", "Otros"],
@@ -66,6 +69,7 @@
         "wages": [
             {
                 "title": "SALARIOS",
+                "subtitle": "placeholder",
                 "question": "¿Cobras menos desde que comenzó la pandemia?",
                 "type": "options",
                 "options": ["Si", "No"],
@@ -78,6 +82,7 @@
         "tax": [
             {
                 "title": "FISCALIDAD",
+                "subtitle": "placeholder",
                 "question": "¿Por cuáles de las siguientes actividades pagas impuestos en tu día a día?",
                 "type": "multiplechoice",
                 "options": ["Por mis ingresos", "Por mi propiedad", "Por comprar comida", "Por ir al médico", "Transporte", "Por mis gastos (teléfono, luz, agua, etc.)", "Por divorciarme", "Por recibir una herencia"],
