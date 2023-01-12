@@ -95,6 +95,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding-right: var(--padding);
+    max-width: 180px;
 }
 
 @media screen and (max-width: 550px) {

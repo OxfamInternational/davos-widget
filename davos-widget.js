@@ -177,7 +177,7 @@ class DavosWidget {
             // Setup the question element
             const questionElement = document.createElement('p');
             questionElement.setAttribute('class','davoswidget-question-text');
-            questionElement.innerHTML = questionData.question + '<p>Please select all that apply</p>';
+            questionElement.innerHTML = questionData.question + ' <em>Please select all that apply</em>';
             contentWrapper.appendChild(questionElement);
 
             const optionsWrapper = document.createElement('div')
