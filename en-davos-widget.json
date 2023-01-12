@@ -3,7 +3,7 @@
         "billionaires": [
             {
                 "title": "BILLIONAIRE QUOTES",
-                "subtitle": "Can you guess correctly which billionaire said what below?",
+                "subtitle": "Can you guess which billionaire said what?",
                 "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you must use logic in that sense.",
                 "type": "options",
                 "response_post": "said this. In today’s dire economy, wealth taxes paid by the super-rich only accounts for 4% of all tax revenue while tax paid by everyday people accounts for close to 80%! Governments can rectify this inequality by deciding to #TaxTheRich.",
