@@ -62,7 +62,7 @@
                 "subtitle": "placeholder",
                 "question": "Avec la hausse du coût de la vie, à quoi avez-vous dû renoncer pour survivre ?",
                 "type": "multiplechoice",
-                "options": ["Un repas", "Des soins de santé", "Soins médicaux", "Douches chaudes / études", "Divertissement / loisirs", "Autre"],
+                "options": ["Un repas", "Des soins de santé", "Soins médicaux", "Douches chaudes", "Divertissement / loisirs", "Études"],
                 "response": "Vous ne serez pas surprise d’apprendre que les milliardaires n’ont renoncé à rien. Depuis 2020, leur fortune augmente de 2,7 milliards par jour. Alors que les prix alimentaires devraient augmenter de 18 % en 2022, ceux des produits de luxe comme les yachts, le champagne et les chevaux pur-sang n’ont augmenté que de 7 % #TaxonsLesRiches"
             }
         ],
