@@ -12,7 +12,7 @@
             },
             {
                 "title": "Billionaire Quotes",
-                "subtitle": "Who said what?",
+                "subtitle": "Can you guess which billionaire said what?",
                 "question": "I mean the truth is, I've never had it so good in terms of taxes. I am paying the lowest tax rate that I've ever paid in my life.",
                 "type": "options",
                 "response_post": "said this. In today’s dire economy, wealth taxes paid by the super-rich only accounts for 4% of all tax revenue while tax paid by everyday people accounts for close to 80%! Governments can rectify this inequality by deciding to #TaxTheRich.",
@@ -21,7 +21,7 @@
             },
             {
                 "title": "Billionaire Quotes",
-                "subtitle": "Who said what?",
+                "subtitle": "Can you guess which billionaire said what?",
                 "question": "Eventually they run out of other people’s money and then they come for you",
                 "type": "options",
                 "response_post": "said this. In today’s dire economy, wealth taxes paid by the super-rich only accounts for 4% of all tax revenue while tax paid by everyday people accounts for close to 80%! Governments can rectify this inequality by deciding to #TaxTheRich.",
@@ -30,7 +30,7 @@
             },
             {
                 "title": "Billionaire Quotes",
-                "subtitle": "Who said what?",
+                "subtitle": "Can you guess which billionaire said what?",
                 "question": "She (Elizabeth Warren) is trying to demonize wealthy people because there are more poor people than wealthy people.",
                 "type": "options",
                 "response_post": "said this. In today’s dire economy, wealth taxes paid by the super-rich only accounts for 4% of all tax revenue while tax paid by everyday people accounts for close to 80%! Governments can rectify this inequality by deciding to #TaxTheRich.",
@@ -41,6 +41,7 @@
         "food": [
             {
                 "title": "Food",
+                "subtitle": "Is your food basket shrinking?",
                 "question": "In recent months, how much more are you spending on food?",
                 "type": "currency",
                 "response": "A hard truth to swallow is that as households are increasingly struggling to keep up with food prices, some of the world’s largest food and energy companies increased their profits by 256% in 2022 during the cost-of-living crisis, we must #SurvivalOfTheRichest"
@@ -49,6 +50,7 @@
         "energy": [
             {
                 "title": "Energy",
+                "subtitle": "Are your utility bills skyrocketing?",
                 "question": "In recent months, how much more are you spending on energy* (electricity, heat, fuel)?",
                 "type": "currency",
                 "response": "As individuals like yourself pay higher pump & utility prices, food and energy companies have made $ 306 billion in windfall profits in 2022. Oxfam’s report has found a growing body of evidence that points to corporate profits and margins as a significant driver of greed-inflation. #FightInequality"
@@ -56,16 +58,18 @@
         ],
         "qol": [
             {
-                "title": "Quality of life/Cost of living",
+                "title": "Quality of life",
+                "subtitle": "What simple luxuries have you given up?"
                 "question": "Due to the rising cost of living, what have you had to sacrifice to survive?",
                 "type": "multiplechoice",
-                "options": ["A meal", "Care services for a loved one (like childcare, at home nursing care, etc.)", "Medical care", "Hot showers / Education", "Entertainment", "Other"],
+                "options": ["A meal", "Care services", "Medical care", "Hot showers", "Entertainment", "Education"],
                 "response": " It comes as no surprise that Billionaires have sacrificed nothing. Since 2020 their wealth has increased by $2.7bn a day. While the cost of food expected to increase by 18%in 2022, luxury goods such as yachts, champagne & thoroughbreds have only increased by 7%. #TaxTheRich"
             }
         ],
         "wages": [
             {
                 "title": "Wages",
+                "subtitle": "Can you afford a decent life?",
                 "question": "Has your wage decreased since the pandemic began?",
                 "type": "options",
                 "options": ["Yes", "No"],
@@ -78,9 +82,10 @@
         "tax": [
             {
                 "title": "Tax",
+                "subtitle": "Who pays more taxes, you or billionaires?",
                 "question": "In your every day life, when do you pay taxes?",
                 "type": "multiplechoice",
-                "options": ["On my income", "On my property", "Grocery shopping", "Healthcare", "Transportation", "Utility Bills (Phone, Electricity, Water etc.)", "Getting a Divorce", "Inheritance"],
+                "options": ["On my income", "On my property", "Grocery shopping", "Healthcare", "Transportation", "Utility Bills", "Getting a Divorce", "Inheritance"],
                 "response": "Billionaires continue to stealthily avoid taxes by investing in assets that accrue value and increase their overall wealth without being subject to taxation, not to mention the easy access to tax havens globally. A #WealthTax is long overdue to #fightinequality"
             }
         ]
