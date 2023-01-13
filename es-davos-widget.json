@@ -42,7 +42,7 @@
             {
                 "title": "ENERGÍA",
                 "subtitle": "",
-                "question": "In recent months, how much more are you spending on energy* (electricity, heat, fuel)?",
+                "question": "En los últimos meses, ¿cuánto más estás gastando en energía (luz, calefacción, gasolina...)?",
                 "type": "currency",
                 "response": "Mientras personas como tú pagan más por el combustible y las facturas, las empresas energéticas y de alimentación han amasado 306 000 millones de dólares en beneficios extraordinarios en 2022. El informe de Oxfam presenta una creciente cantidad de datos que señalan a los beneficios y márgenes empresariales como uno de los principales motores de la inflación generada por la avaricia. #LuchemosContraLaDesigualdad"
             }
