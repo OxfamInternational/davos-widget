@@ -4,15 +4,6 @@
             {
                 "title": "CITATIONS DES MILLIARDAIRES",
                 "subtitle": "Qui a dit quoi?",
-                "question": "C'est logique, non ? Ceux qui ont plus paient plus. C’est une question de logique.",
-                "type": "options",
-                "response_post": "a dit ceci. Dans le contexte économique catastrophique actuel, les impôts sur la fortune payés par les ultrariches ne représentent que 4 % des recettes fiscales, alors que ceux des citoyen·nes ordinaires représentent 80 % ! Les gouvernements peuvent corriger ces inégalités, pour cela #TaxonsLesRiches.",
-                "options": ["Tom Cruise", "Penélope Cruz", "Rosalía", "Adam Sandler"],
-                "answer": "Penélope Cruz"
-            },
-            {
-                "title": "CITATIONS DES MILLIARDAIRES",
-                "subtitle": "Qui a dit quoi?",
                 "question": "En matière d’impôts, je n’ai jamais connu meilleure situation. Je n’en ai jamais payé aussi peu.",
                 "type": "options",
                 "response_post": "a dit ceci. Dans le contexte économique catastrophique actuel, les impôts sur la fortune payés par les ultrariches ne représentent que 4 % des recettes fiscales, alors que ceux des citoyen·nes ordinaires représentent 80 % ! Les gouvernements peuvent corriger ces inégalités, pour cela #TaxonsLesRiches.",

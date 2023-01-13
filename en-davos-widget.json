@@ -2,15 +2,6 @@
     "questions": {
         "billionaires": [
             {
-                "title": "BILLIONAIRE QUOTES",
-                "subtitle": "Who said what?",
-                "question": "Well, it's logical, isn't it? Whoever has more, pays more. I think you must use logic in that sense.",
-                "type": "options",
-                "response_post": "said this. In today’s dire economy, wealth taxes paid by the super-rich only accounts for 4% of all tax revenue while tax paid by everyday people accounts for close to 80%! Governments can rectify this inequality by deciding to #TaxTheRich.",
-                "options": ["Tom Cruise", "Penélope Cruz", "Rosalía", "Adam Sandler"],
-                "answer": "Penélope Cruz"
-            },
-            {
                 "title": "Billionaire Quotes",
                 "subtitle": "Who said what?",
                 "question": "I mean the truth is, I've never had it so good in terms of taxes. I am paying the lowest tax rate that I've ever paid in my life.",
