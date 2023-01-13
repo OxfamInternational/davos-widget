@@ -7,7 +7,7 @@
                 "question": "En matière d’impôts, je n’ai jamais connu meilleure situation. Je n’en ai jamais payé aussi peu.",
                 "type": "options",
                 "response_post": "a dit ceci. Dans le contexte économique catastrophique actuel, les impôts sur la fortune payés par les ultrariches ne représentent que 4 % des recettes fiscales, alors que ceux des citoyen·nes ordinaires représentent 80 % ! Les gouvernements peuvent corriger ces inégalités, pour cela #TaxonsLesRiches.",
-                "options": ["Bernard Arnault", "Warren Buffet", "Mark Zuckerberg", "James Cargill"],
+                "options": ["Bernard Arnault", "Warren Buffet", "Mark Zuckerberg", "Michael Dell"],
                 "answer": "Warren Buffett"
             },
              {
@@ -49,7 +49,7 @@
         ],
         "qol": [
             {
-                "title": "QUALITÉ DE VIE/COÛT DE LA VIE",
+                "title": "QUALITÉ DE VIE",
                 "subtitle": "",
                 "question": "Avec la hausse du coût de la vie, à quoi avez-vous dû renoncer pour survivre ?",
                 "type": "multiplechoice",
