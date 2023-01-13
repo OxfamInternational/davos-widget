@@ -3,7 +3,7 @@
         "billionaires": [
             {
                 "title": "FRASES DE MILMILLONARIOS",
-                "subtitle": "¿Quien dijo que?",
+                "subtitle": "¿Quién dijo qué?",
                 "question": "La verdad es que nunca lo había tenido mejor en cuanto a impuestos. Nunca había pagado un tipo impositivo tan bajo.",
                 "type": "options",
                 "response_post": "dijo esto. En la nefasta economía actual, los impuestos sobre la riqueza que pagan los súper ricos solo representan el 4 % de todos los ingresos fiscales, mientras que la gente corriente paga cerca del 80 %  Los Gobiernos pueden corregir esta desigualdad aplicando un #Impuestoalariqueza.said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
@@ -12,7 +12,7 @@
             },
             {
                 "title": "FRASES DE MILMILLONARIOS",
-                "subtitle": "¿Quien dijo que?",
+                "subtitle": "¿Quién dijo qué?",
                 "question": "Al final agotan el dinero de los demás y vienen a por ti.",
                 "type": "options",
                 "response_post": "dijo esto. En la nefasta economía actual, los impuestos sobre la riqueza que pagan los súper ricos solo representan el 4 % de todos los ingresos fiscales, mientras que la gente corriente paga cerca del 80 %  Los Gobiernos pueden corregir esta desigualdad aplicando un #Impuestoalariqueza.said this. In today’s dire economy, the wealthy only account for 4% of the tax revenue while individuals account for close to 80%, governments can rectify this inequality by #TaxTheRich policies.",
@@ -21,7 +21,7 @@
             },
             {
                 "title": "FRASES DE MILMILLONARIOS",
-                "subtitle": "¿Quien dijo que?",
+                "subtitle": "¿Quién dijo qué?",
                 "question": "(Elizabeth Warren) pretende demonizar a las personas ricas porque hay muchas más personas pobres que ricas.",
                 "type": "options",
                 "response_post": "dijo esto. En la nefasta economía actual, los impuestos sobre la riqueza que pagan los súper ricos solo representan el 4 % de todos los ingresos fiscales, mientras que la gente corriente paga cerca del 80 %  Los Gobiernos pueden corregir esta desigualdad aplicando un #Impuestoalariqueza.said this. In today’s dire economy, wealth taxes paid by the super-rich only accounts for X% of all tax revenue while tax paid by everyday people accounts for close to X%! Governments can rectify this inequality by deciding to #TaxTheRich.",
@@ -76,7 +76,7 @@
                 "subtitle": "",
                 "question": "¿Por cuáles de las siguientes actividades pagas impuestos en tu día a día?",
                 "type": "multiplechoice",
-                "options": ["Por mis ingresos", "Por mi propiedad", "Por comprar comida", "Por ir al médico", "Transporte", "Por mis gastos", "Por divorciarme", "Por recibir una herencia"],
+                "options": ["Por mis ingresos", "Por mi propiedad", "Por comprar comida", "Por ir al médico", "Transporte", "Por lo que consumo", "Por divorciarme", "Por recibir una herencia"],
                 "response": "Los milmillonarios siguen eludiendo impuestos disimuladamente invirtiendo en activos que acumulan valor y aumentan su patrimonio sin pagar impuestos por ello, por no hablar del fácil acceso que tienen a paraísos fiscales en todo el mundo. El #ImpuestoALaRiqueza es necesario desde hace tiempo para que #LuchaContraLaDesigualdad"
             }
         ]
