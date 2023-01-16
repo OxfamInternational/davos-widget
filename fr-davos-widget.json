@@ -54,7 +54,7 @@
                 "question": "Avec la hausse du coût de la vie, à quoi avez-vous dû renoncer pour survivre ?",
                 "type": "multiplechoice",
                 "options": ["Un repas", "Des soins de santé", "Soins médicaux", "Douches chaudes", "Divertissement / loisirs", "Études"],
-                "response": "Vous ne serez pas surprise d’apprendre que les milliardaires n’ont renoncé à rien. Depuis 2020, leur fortune augmente de 2,7 milliards par jour. Alors que les prix alimentaires devraient augmenter de 18 % en 2022, ceux des produits de luxe comme les yachts, le champagne et les chevaux pur-sang n’ont augmenté que de 7 % #TaxonsLesRiches"
+                "response": "Vous ne serez pas surpris.e d’apprendre que les milliardaires n’ont renoncé à rien. Depuis 2020, leur fortune augmente de 2,7 milliards par jour. Alors que les prix alimentaires devraient augmenter de 18 % en 2022, ceux des produits de luxe comme les yachts, le champagne et les chevaux pur-sang n’ont augmenté que de 7 % #TaxonsLesRiches"
             }
         ],
         "wages": [
@@ -65,7 +65,7 @@
                 "type": "options",
                 "options": ["Oui", "Non"],
                 "responses": {
-                    "Oui": "Vous faites partie de la majeure partie de l’humanité qui a perdu des revenus ou des emplois tandis que depuis 2020, les 1 % les plus riches ont accaparé deux fois plus de richesses que le reste de l'humanité. Nous devons combattre les inégalités et mettre fin à la #LoiDuPlusFort",
+                    "Oui": "Vous faites parti.e de la majeure partie de l’humanité qui a perdu des revenus ou des emplois tandis que depuis 2020, les 1 % les plus riches ont accaparé deux fois plus de richesses que le reste de l'humanité. Nous devons combattre les inégalités et mettre fin à la #LoiDuPlusFort",
                     "Non": "Au moins 1,7 milliard de personnes vivent dans des pays où les salaires ne suivent pas le rythme de l’inflation, ce qui entraîne une diminution des salaires réels qui aggravera les inégalités et la pauvreté. #CombattonsLesInégalités"   
                 }
             }
