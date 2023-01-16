@@ -82,6 +82,7 @@
         ]
     },
     "ui": {
-        "submit": "Entregar"
+        "submit": "Entregar",
+        "next": "PRÓXIMA PREGUNTA"
     }
 }

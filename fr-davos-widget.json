@@ -82,6 +82,7 @@
         ]
     },
     "ui": {
-        "submit": "Envoyer"
+        "submit": "Envoyer",
+        "next": "QUESTION SUIVANTE"
     }
 }

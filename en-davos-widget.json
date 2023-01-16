@@ -82,6 +82,7 @@
         ]
     },
     "ui": {
-        "submit": "Submit"
+        "submit": "Submit",
+        "next": "Next Question"
     }
 }

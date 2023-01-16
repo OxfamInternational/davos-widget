@@ -90,7 +90,7 @@ class DavosWidget {
             var widgetID = targetItem.dataset.widget;
             // Check widget exists to limit errors in the JSON.
             if (this.mergedQuestionsData.questions.hasOwnProperty(widgetID)) {
-                this.setupIndividual(widgetID, this.mergedQuestionsData.questions[widgetID], targetItem);
+                this.setupIndividual(widgetID, this.mergedQuestionsData.questions[widgetID], targetItem, this.ui_trans);
             }
         });        
 
@@ -256,7 +256,7 @@ class DavosWidget {
     
 
     // Setup an individual widget.
-    setupIndividual(widgetID, questionsData, targetItem) {
+    setupIndividual(widgetID, questionsData, targetItem, ui_trans) {
         const selector = 'davoswidget-' + widgetID;
         // Replace the placeholder token
         var wrapper = document.createElement("div");
@@ -369,7 +369,7 @@ class DavosWidget {
                 const currentQuestionKey = parseInt(key)
                 if (currentQuestionKey < arraySize) {
                     const next = document.createElement('a');
-                    next.innerHTML = "Next Question";
+                    next.innerHTML = ui_trans['next'];
                     next.setAttribute('href', '#');
                     next.setAttribute('class', 'davoswidget-next');
                     const nextElementWrapper = document.querySelector('.' + selector + ' div[data-davoswidget-questionkey="' + key + '"] .davoswidget-next-wrapper');
