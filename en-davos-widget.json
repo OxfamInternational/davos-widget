@@ -81,5 +81,8 @@
                 "response": "Billionaires continue to stealthily avoid taxes by investing in assets that accrue value and increase their overall wealth without being subject to taxation, not to mention the easy access to tax havens globally. A #WealthTax is long overdue to #fightinequality"
             }
         ]
+    },
+    "ui": {
+        "submit": "Submit"
     }
 }

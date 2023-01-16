@@ -80,5 +80,8 @@
                 "response": "Les milliardaires continent à éviter discrètement le paiement des impôts en investissant dans des actifs non imposables qui augmentent la valeur de leur patrimoine et leur fortune globale. En outre, n’oublions pas qu’ils ont accès très facilement aux paradis fiscaux mondiaux. Cela fait longtemps que nous attendons un #ImpôtSurLaFortune pour #LutterContreLesInégalités"
             }
         ]
+    },
+    "ui": {
+        "submit": "Envoyer"
     }
 }

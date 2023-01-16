@@ -18,6 +18,7 @@ window.twttr = (function(d, s, id) {
 function buildCta(ctaData) {
     const cta = document.createElement('a');
     cta.innerHTML = ctaData.linktext;
+    cta.setAttribute('_target', 'blank');
     if (ctaData.type === 'tweet') {
         cta.setAttribute('href', 'https://twitter.com/intent/tweet?button_hashtag=LoveTwitter&ref_src=twsrc%5Etfw');
         cta.setAttribute('data-show-count', 'false');
@@ -69,6 +70,7 @@ class DavosWidget {
                 }
             }
             this.mergedQuestionsData = mergedQuestionsData;
+            this.ui_trans = mergedQuestionsData.ui;
         });
 
     }
@@ -202,7 +204,7 @@ class DavosWidget {
             const submit = document.createElement('a');
             submit.setAttribute('href','#');
             submit.setAttribute('class', 'davoswidget-submit');
-            submit.innerHTML = "Submit";
+            submit.innerHTML = this.ui_trans['submit'];
             optionsWrapper.appendChild(submit);
         }
         if (questionType === "currency") {
@@ -236,7 +238,7 @@ class DavosWidget {
             const submit = document.createElement('a');
             submit.setAttribute('href','#');
             submit.setAttribute('class', 'davoswidget-submit');
-            submit.innerHTML = "Submit";
+            submit.innerHTML = this.ui_trans['submit'];
             optionsWrapper.appendChild(submit)
             contentWrapper.appendChild(optionsWrapper);
         }

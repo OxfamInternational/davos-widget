@@ -80,5 +80,8 @@
                 "response": "Los milmillonarios siguen eludiendo impuestos disimuladamente invirtiendo en activos que acumulan valor y aumentan su patrimonio sin pagar impuestos por ello, por no hablar del fácil acceso que tienen a paraísos fiscales en todo el mundo. El #ImpuestoALaRiqueza es necesario desde hace tiempo para que #LuchaContraLaDesigualdad"
             }
         ]
+    },
+    "ui": {
+        "submit": "Entregar"
     }
 }
