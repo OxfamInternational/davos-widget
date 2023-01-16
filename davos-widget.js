@@ -18,7 +18,7 @@ window.twttr = (function(d, s, id) {
 function buildCta(ctaData) {
     const cta = document.createElement('a');
     cta.innerHTML = ctaData.linktext;
-    cta.setAttribute('_target', 'blank');
+    cta.setAttribute('target', '_blank');
     if (ctaData.type === 'tweet') {
         cta.setAttribute('href', 'https://twitter.com/intent/tweet?button_hashtag=LoveTwitter&ref_src=twsrc%5Etfw');
         cta.setAttribute('data-show-count', 'false');
