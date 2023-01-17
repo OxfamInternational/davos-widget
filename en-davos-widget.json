@@ -13,7 +13,7 @@
             {
                 "title": "Billionaire Quotes",
                 "subtitle": "Who said what?",
-                "question": "Eventually they run out of other people’s money and then they come for you",
+                "question": "Eventually they run out of other people’s money and then they come for you.",
                 "type": "options",
                 "response_post": "said this. In today's #SurvivalOfTheRichest economy, wealth taxes on the super-rich only make for 4% of all tax revenue, while taxes on the rest of us account for close to 80%. It’s time for governments to #TaxTheRich to #FightInequality",
                 "options": ["Kylie Jenner", "Bill Gates", "Sergey Brin", "Elon Musk"],
@@ -54,7 +54,7 @@
                 "question": "Due to the rising cost of living, what have you had to sacrifice to survive?",
                 "type": "multiplechoice",
                 "options": ["A meal", "Care services", "Medical care", "Hot showers", "Entertainment", "Education"],
-                "response": " It comes as no surprise that Billionaires have sacrificed nothing. Since 2020 their wealth has increased by $2.7bn a day. While the cost of food expected to increase by 18%in 2022, luxury goods such as yachts, champagne & thoroughbreds have only increased by 7%. #TaxTheRich"
+                "response": "It comes as no surprise that Billionaires have sacrificed nothing. Since 2020 their wealth has increased by $2.7 billion a day. While the cost of food expected to increase by 18% in 2022, luxury goods such as yachts, champagne & thoroughbreds have only increased by 7%. #TaxTheRich"
             }
         ],
         "wages": [
@@ -65,8 +65,8 @@
                 "type": "options",
                 "options": ["Yes", "No"],
                 "responses": {
-                    "Yes": "You are well within the majority of humanity that has experienced a decrease in income or loss of employment but the richest 1% have snatched-up almost twice as much wealth as the rest of the world combined since 2020. We must fight inequality by demanding #SurvivalOfTheRichest",
-                    "No": "At least 1.7 billion people live in countries where inflation is outpacing wage growth, thus you’re inadvertently experiencing a real-terms pay cut which will in turn drive-up inequality and poverty. #FightInequality"   
+                    "Yes": "You are well within the majority of humanity that has experienced a decrease in income or loss of employment but the richest 1% have snatched-up almost twice as much wealth as the rest of the world combined since 2020. We must fight inequality by demanding an end to #SurvivalOfTheRichest",
+                    "No": "At least 1.7 billion people live in countries where inflation is outpacing wage growth, thus you’re inadvertently experiencing a real-terms pay cut which will in turn drive-up inequality and poverty. #FightInequality"
                 }
             }
         ],
